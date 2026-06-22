@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Ismael | Backend Developer & Tech Lead",
+    "description": "Tech Lead y Backend Engineer. Escalo plataformas y equipos para convertir complejidad técnica en resultados de negocio."
+  },
+  "person": {
+    "name": "Ismael Pradas",
+    "title": "Tech Lead | Backend Engineer",
+    "avatar": "https://avatars.githubusercontent.com/u/45384098?v=4",
+    "location": "Utrera, ES",
+    "contacts": "500+",
+    "followers": "691",
+    "github": {
+      "handle": "ipradasgomez",
+      "url": "https://github.com/ipradasgomez"
+    }
+  },
+  "hero": {
+    "badge": "Backend + Tech Leadership",
+    "headline": "Escalo plataformas y equipos para convertir complejidad técnica en resultados de negocio.",
+    "description": "Soy Ismael Pradas, Tech Lead y Backend Engineer. Diseño sistemas robustos, lidero migraciones y aplico IA de forma práctica para aumentar la velocidad del equipo sin perder criterio de ingeniería.",
+    "email": "contacto@tekkisma.es",
+    "linkedin": {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/tech-isma/"
+    }
+  },
+  "value": {
+    "eyebrow": "Propuesta de valor",
+    "title": "Ingeniería clásica con mentalidad de producto y foco en impacto.",
+    "description": "He construido y evolucionado sistemas core de negocio, modernizado plataformas legacy y optimizado pipelines críticos para reducir tiempos y costes de forma medible. Trabajo donde se cruzan arquitectura, execution y liderazgo técnico.",
+    "highlights": [
+      {
+        "title": "Liderazgo técnico",
+        "description": "Alineo equipo, calidad y entrega para que producto y tecnología avancen juntos."
+      },
+      {
+        "title": "AI con criterio",
+        "description": "Uso IA como multiplicador de productividad, con juicio ingenieril como base."
+      }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Tech Lead · Magnific (formerly Freepik)",
+      "period": "abr. 2026 - actualidad · remoto"
+    },
+    {
+      "role": "Tech Lead / Backend Engineer · Freepik Company",
+      "period": "ago. 2020 - abr. 2026"
+    },
+    {
+      "role": "Backend Developer · Cash Converters España",
+      "period": "jun. 2019 - ago. 2020",
+      "note": "Pipeline de precios de 1h+ a menos de 5 min."
+    }
+  ],
+  "stack": [
+    "Laravel",
+    "PHP",
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Docker",
+    "Vue",
+    "Filament",
+    "Tailwind CSS"
+  ],
+  "footer": {
+    "tagline": "Tech Lead y Backend Engineer orientado a plataformas escalables.",
+    "skills": [
+      "Backend architecture",
+      "Platform modernization",
+      "Classic engineering + practical AI"
+    ]
+  }
+}

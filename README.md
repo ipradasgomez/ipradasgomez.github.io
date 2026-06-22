@@ -1,6 +1,6 @@
 # ipradasgomez.github.io
 
-Personal site at https://ipradasgomez.github.io built with Vue, Tailwind CSS, and Vite.
+Personal site at https://tekkisma.es (GitHub Pages + Cloudflare DNS).
 
 ## Branches
 
@@ -65,6 +65,14 @@ The check name appears after the workflow has run once on a PR.
 After changing the source, re-run **Deploy to GitHub Pages** from the Actions tab.
 
 **Protect `develop` and `main`:** Settings → Branches → rulesets with the options above.
+
+## Custom domain (tekkisma.es)
+
+Production URL: **https://tekkisma.es** (solo apex; subdominios → homelab).
+
+Guía paso a paso según tu Cloudflare actual (túnel `tekkisma_lab`): **[docs/dns-tekkisma.es.md](docs/dns-tekkisma.es.md)**
+
+Resumen: **elimina** el Tunnel en `@`, **añade** CNAME `@` → `ipradasgomez.github.io` (gris), **mantén** `*` → túnel, **redirect** `www` → apex.
 
 ## Stack
 
