@@ -60,7 +60,9 @@ The check name appears after the workflow has run once on a PR.
 
 ## One-time GitHub setup
 
-**Pages:** Settings → Pages → Source: **GitHub Actions**
+**Pages:** Settings → Pages → Source: **GitHub Actions** (do not pick Jekyll or Static HTML — the repo already has `deploy.yml`)
+
+After changing the source, re-run **Deploy to GitHub Pages** from the Actions tab.
 
 **Protect `develop` and `main`:** Settings → Branches → rulesets with the options above.
 
