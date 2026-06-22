@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-isma-black: #000000;
+  --color-isma-orange: #ff6b00;
+  --color-isma-orange-muted: #cc5500;
+  --font-isma-sans: 'Manrope', system-ui, sans-serif;
+}
+
+body {
+  @apply bg-isma-black font-sans text-isma-orange antialiased;
+}

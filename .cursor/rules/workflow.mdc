@@ -1,0 +1,69 @@
+---
+description: Git workflow, deploy, and Vue/Tailwind conventions for this GitHub Pages site
+alwaysApply: true
+---
+
+# ipradasgomez.github.io — workflow
+
+Personal site at https://ipradasgomez.github.io. Vue 3 + Vue Router + Tailwind + Vite, deployed via GitHub Actions.
+
+## Branches
+
+- `develop` — default working branch. All site changes happen here.
+- `main` — production releases only. Never commit site work directly to `main`.
+
+Do not push or run deploy unless the user asks.
+
+## Local dev (Docker)
+
+```bash
+make dev           # Docker dev server at http://127.0.0.1:5173
+make dev-down      # stop dev server
+make build-check   # local build (same as CI)
+make release       # local build + PR develop→main + wait for CI checks
+make deploy        # alias for release
+make setup-hooks   # install pre-commit validations (once)
+```
+
+**Build Check** runs on every PR to `develop` and `main`. Branch protection on both branches should require the `build` status check.
+
+Do not push directly to `main`. Never merge PRs until Build Check passes.
+
+## Routing
+
+- Use **Vue Router** (`src/router/index.js`).
+- Add pages as views in `src/views/`.
+- Use `<RouterLink>` for internal navigation, not `<a href>` for app routes.
+- Build generates `404.html` from `index.html` for GitHub Pages SPA support.
+
+## Static data ("fake API")
+
+- JSON files live in `public/data/` (e.g. `site.json`, `projects.json`).
+- Fetch at runtime via `src/api/fetchJson.js` — files are copied to `dist/data/`, not bundled.
+- Prefer this over hardcoding large datasets in components.
+
+## Site structure
+
+```
+src/
+  router/index.js
+  views/
+  api/fetchJson.js
+  App.vue
+  main.js
+public/
+  data/           # static JSON data
+  favicon.svg
+docker-compose.yml
+makefiles/          # dev.mk, github-deploy.mk, hooks.mk
+.githooks/
+.github/workflows/build-check.yml
+.github/workflows/deploy.yml
+```
+
+## AI behavior
+
+- Work on `develop` unless the user explicitly targets another branch.
+- Prefer minimal, focused diffs; match existing Vue/Tailwind patterns.
+- Do not create git commits or push unless the user requests it.
+- For production release, suggest `make release` (or `make deploy`).
