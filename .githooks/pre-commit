@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+branch=$(git rev-parse --abbrev-ref HEAD)
+if [ "$branch" = "main" ]; then
+  echo "pre-commit: commits on main are blocked — use develop"
+  exit 1
+fi
+
+staged=$(git diff --cached --name-only)
+if echo "$staged" | grep -qE '^(dist/|node_modules/)'; then
+  echo "pre-commit: dist/ and node_modules/ must not be committed"
+  exit 1
+fi
+
+for file in $(echo "$staged" | grep 'public/data/.*\.json$'); do
+  if [ -f "$file" ]; then
+    python3 -m json.tool "$file" > /dev/null 2>&1 || {
+      echo "pre-commit: invalid JSON in $file"
+      exit 1
+    }
+  fi
+done
+
+exit 0
