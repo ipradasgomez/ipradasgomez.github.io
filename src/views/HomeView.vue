@@ -29,7 +29,15 @@ const { t, tr } = useLocale()
 
             <div class="min-w-0 flex-1">
               <RevealBlock>
-                <p class="kicker flex items-center gap-2.5">
+                <p class="kicker">
+                  <span class="text-ink-subtle">{{ t('sections.home.index') }}</span>
+                  <span class="text-line-strong">/</span>
+                  <span>{{ t('sections.home.kicker') }}</span>
+                </p>
+              </RevealBlock>
+
+              <RevealBlock :delay="40">
+                <p class="kicker mt-3 flex items-center gap-2.5">
                   <BrandMark size="sm" decorative class="sm:hidden" />
                   <span>{{ t('hero.greeting') }} Ismael</span>
                 </p>

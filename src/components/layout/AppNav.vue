@@ -18,10 +18,10 @@ const links = [
 ]
 
 const navLinks = computed(() =>
-  links.map((link, i) => ({
+  links.map((link) => ({
     ...link,
     label: t(`nav.${link.key}`),
-    index: String(i + 1).padStart(2, '0'),
+    index: t(`sections.${link.key}.index`),
   })),
 )
 
