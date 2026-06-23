@@ -6,7 +6,7 @@ const branch =
 
 if (hasTinaCloud) {
   console.log(`Building Tina admin (Tina Cloud, branch: ${branch})…`)
-  execSync('tinacms build', {
+  execSync('tinacms build --skip-cloud-checks', {
     stdio: 'inherit',
     env: { ...process.env, TINA_BRANCH: branch },
   })
