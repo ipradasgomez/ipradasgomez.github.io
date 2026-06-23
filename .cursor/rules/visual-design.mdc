@@ -1,0 +1,61 @@
+---
+description: Visual language and UI styling for tekkisma.es — editorial dark theme, orange accent, no generic boxes
+globs: src/**/*.{vue,css}
+alwaysApply: false
+---
+
+# Visual design — tekkisma.es
+
+Dark editorial portfolio. **Single source of truth:** `src/style.css` (`:root` tokens) + `tailwind.config.js` (maps tokens to utilities).
+
+## Token map
+
+| Layer | Where | Use |
+|-------|--------|-----|
+| Colors | `--c-brand-*`, `--c-surface*`, `--c-ink*` | Tailwind: `brand-*`, `surface`, `ink`, `accent`, `line` |
+| Dividers | `--alpha-divider`, `--alpha-divider-strong` | `border-line`, `.divider-faint` |
+| Fonts | `--font-sans`, `--font-mono`, `--font-gallifreyan` | `font-sans`, `font-mono`, `font-gallifreyan` |
+| Radii | `--radius-sm` … `--radius-xl` | `rounded-sm` … `rounded-xl` |
+| Shadows | `--shadow-card`, `--shadow-media`, `--shadow-cover`, `--glow-accent` | `shadow-card`, `shadow-media`, `shadow-cover`, `shadow-glow` |
+| Motion | `--ease-out`, `duration-280`, `ease-out` | transitions |
+
+**Never** hardcode `rgb(249 115 22)` — use `rgb(var(--c-brand-500) / …)` or `brand-500` / `accent`.
+
+## Semantic classes (prefer over raw `text-3xl`)
+
+| Class | Role |
+|-------|------|
+| `.page-section` | Standard view shell (`max-w-content`, padding top) |
+| `.title-section` | Page `h1` in `SectionHeading` |
+| `.title-row` | Blog list titles |
+| `.title-article` | Article hero title |
+| `.title-empty` | Empty / 404 states |
+| `.text-emphasis` | Large inline emphasis (e.g. email) |
+| `.text-body` | Body copy |
+| `.text-meta` | Mono date / metadata |
+| `.display`, `.headline`, `.kicker` | Home hero scale |
+| `.accent-rule`, `.accent-rule--sm/md` | Orange horizontal bars |
+| `.empty-state` | Dashed empty panels only |
+| `.link-back` | Text back navigation + arrow |
+| `.divider-faint` | List row separators |
+
+Gallifreyan overrides target these classes — add new headings to `html.locale-gallifreyan` block in `style.css`.
+
+## Avoid “box with border”
+
+Default **no** to framed cards for layout. Use typography, grids, `.accent-rule`, gradient washes, left rails.
+
+`Card.vue` / `.empty-state` are intentional bordered surfaces — not the default layout tool.
+
+## Personality & motion
+
+- Deterministic marks from content (`blogPostMark`, slug hash)
+- `user-select: none` on decorative glyphs
+- `RevealBlock`, `duration-280`, `ease-out`; respect `prefers-reduced-motion`
+- ES/EN locale codes stay **Latin** (`font-mono`) in Gallifreyan mode
+
+## Quick check
+
+1. Generic SaaS card? → rework.
+2. New color/radius/shadow? → add token first, then Tailwind extend if needed.
+3. Matches an existing semantic class?

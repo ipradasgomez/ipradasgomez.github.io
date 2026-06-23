@@ -13,8 +13,8 @@
   },
   "hero": {
     "title": {
-      "es": "Backend, liderazgo técnico e IA con criterio.",
-      "en": "Backend, technical leadership and AI with judgement."
+      "es": "Software. Liderazgo. IA driven",
+      "en": "Software. Leadership. AI driven"
     },
     "headline": {
       "es": "Convierto complejidad técnica en plataformas y equipos que escalan.",
@@ -68,38 +68,6 @@
       }
     ]
   },
-  "experience": [
-    {
-      "company": "Magnific (antes Freepik)",
-      "role": { "es": "Tech Lead", "en": "Tech Lead" },
-      "period": { "es": "abr. 2026 — actualidad · remoto", "en": "Apr 2026 — present · remote" },
-      "current": true,
-      "description": {
-        "es": "Lidero el desarrollo backend de producto, definiendo arquitectura y las prácticas de ingeniería del equipo.",
-        "en": "Leading product backend development, defining architecture and the team's engineering practices."
-      }
-    },
-    {
-      "company": "Freepik Company",
-      "role": { "es": "Tech Lead / Backend Engineer", "en": "Tech Lead / Backend Engineer" },
-      "period": { "es": "ago. 2020 — abr. 2026", "en": "Aug 2020 — Apr 2026" },
-      "current": false,
-      "description": {
-        "es": "Lideré iniciativas backend y migraciones de plataforma, combinando arquitectura, ejecución y mentoring del equipo.",
-        "en": "Led backend initiatives and platform migrations, combining architecture, execution and team mentoring."
-      }
-    },
-    {
-      "company": "Cash Converters España",
-      "role": { "es": "Backend Developer", "en": "Backend Developer" },
-      "period": { "es": "jun. 2019 — ago. 2020", "en": "Jun 2019 — Aug 2020" },
-      "current": false,
-      "description": {
-        "es": "Reduje el pipeline de precios de más de 1h a menos de 5 minutos.",
-        "en": "Cut the pricing pipeline from over 1h to under 5 minutes."
-      }
-    }
-  ],
   "stack": [
     {
       "group": { "es": "Lenguajes & Frameworks", "en": "Languages & Frameworks" },

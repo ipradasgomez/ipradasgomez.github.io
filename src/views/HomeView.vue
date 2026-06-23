@@ -44,7 +44,7 @@ const { t, tr } = useLocale()
               </RevealBlock>
 
               <RevealBlock :delay="80">
-                <h1 class="display mt-5 text-ink">
+                <h1 class="display hero-title mt-5 text-ink">
                   {{ tr(profile.hero.title) }}
                 </h1>
               </RevealBlock>

@@ -6,7 +6,7 @@ const branch =
 
 if (hasTinaCloud) {
   console.log(`Building Tina admin (Tina Cloud, branch: ${branch})…`)
-  execSync('tinacms build', {
+  execSync('tinacms build --skip-cloud-checks', {
     stdio: 'inherit',
     env: { ...process.env, TINA_BRANCH: branch },
   })
@@ -18,5 +18,7 @@ if (hasTinaCloud) {
 
 // Site content (blog, profile, etc.) always comes from the repo checkout below.
 execSync('node scripts/generate-posts.mjs', { stdio: 'inherit' })
+execSync('node scripts/generate-experience.mjs', { stdio: 'inherit' })
 execSync('vite build', { stdio: 'inherit' })
 execSync('cp dist/index.html dist/404.html', { stdio: 'inherit' })
+execSync('node scripts/generate-post-og-pages.mjs', { stdio: 'inherit' })

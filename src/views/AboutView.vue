@@ -11,7 +11,7 @@ const { t, tr } = useLocale()
 </script>
 
 <template>
-  <section v-if="profile" class="mx-auto max-w-content px-6 pt-16 sm:pt-20">
+  <section v-if="profile" class="page-section">
     <RevealBlock>
       <SectionHeading
         :index="t('sections.about.index')"
@@ -27,7 +27,7 @@ const { t, tr } = useLocale()
         <p
           v-for="(para, i) in tr(profile.about.paragraphs)"
           :key="i"
-          class="text-base leading-relaxed text-ink-muted"
+          class="text-body"
         >
           {{ para }}
         </p>

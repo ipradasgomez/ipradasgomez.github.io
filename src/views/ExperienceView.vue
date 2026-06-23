@@ -1,15 +1,40 @@
 <script setup>
-import { useProfile } from '../composables/useProfile'
+import { ref, onMounted, nextTick } from 'vue'
+import { fetchJson } from '../api/fetchJson'
 import { useLocale } from '../composables/useLocale'
 import SectionHeading from '../components/ui/SectionHeading.vue'
 import RevealBlock from '../components/ui/RevealBlock.vue'
+import ExperienceEntry from '../components/experience/ExperienceEntry.vue'
 
-const { profile } = useProfile()
-const { t, tr } = useLocale()
+const { t } = useLocale()
+const experience = ref([])
+const loaded = ref(false)
+const openSlug = ref(null)
+
+onMounted(async () => {
+  try {
+    experience.value = await fetchJson('/data/experience.json')
+  } catch {
+    experience.value = []
+  } finally {
+    loaded.value = true
+  }
+})
+
+async function toggleEntry(slug) {
+  const closing = openSlug.value === slug
+  openSlug.value = closing ? null : slug
+
+  if (!closing) {
+    await nextTick()
+    const el = document.getElementById(`experience-${slug}`)
+    el?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+  }
+}
 </script>
 
 <template>
-  <section v-if="profile" class="mx-auto max-w-content px-6 pt-16 sm:pt-20">
+  <section v-if="loaded" class="page-section">
     <RevealBlock>
       <SectionHeading
         :index="t('sections.experience.index')"
@@ -18,37 +43,24 @@ const { t, tr } = useLocale()
       />
     </RevealBlock>
 
-    <ol class="mt-14 border-l border-line">
+    <ol v-if="experience.length" class="experience-timeline mt-14 border-l border-line">
       <RevealBlock
-        v-for="(item, i) in profile.experience"
-        :key="item.company"
+        v-for="(item, i) in experience"
+        :key="item.slug || item.company"
         tag="li"
         :delay="i * 90"
-        class="relative pl-8 pb-12 last:pb-0 sm:pl-10"
+        class="experience-timeline__item relative pl-8 pb-12 last:pb-0 sm:pl-10"
       >
         <span
-          class="absolute -left-[6.5px] top-1.5 h-3 w-3 rounded-full border-2 border-surface"
-          :class="item.current ? 'bg-accent' : 'bg-line-strong'"
+          class="experience-timeline__dot absolute -left-[6.5px] top-1.5 h-3 w-3 rounded-full border-2 border-surface transition duration-280"
+          :class="item.current || openSlug === item.slug ? 'bg-accent' : 'bg-line-strong'"
         />
 
-        <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <h2 class="text-lg font-bold text-ink">{{ tr(item.role) }}</h2>
-          <span
-            v-if="item.current"
-            class="rounded-full bg-accent/15 px-2 py-0.5 font-mono text-[0.65rem] uppercase tracking-wide text-accent"
-          >
-            {{ t('experience.current') }}
-          </span>
-        </div>
-
-        <p class="mt-1 text-sm font-medium text-accent-soft">{{ item.company }}</p>
-        <p class="mt-1 font-mono text-xs text-ink-subtle">{{ tr(item.period) }}</p>
-        <p
-          v-if="item.description"
-          class="mt-3 max-w-prose text-sm leading-relaxed text-ink-muted"
-        >
-          {{ tr(item.description) }}
-        </p>
+        <ExperienceEntry
+          :item="item"
+          :open="openSlug === item.slug"
+          @toggle="toggleEntry(item.slug)"
+        />
       </RevealBlock>
     </ol>
   </section>

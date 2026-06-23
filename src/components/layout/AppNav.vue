@@ -35,13 +35,14 @@ watch(
 
 <template>
   <header
-    class="fixed inset-x-0 top-0 z-50 border-b border-line bg-surface/80 backdrop-blur-md"
+    class="site-header fixed inset-x-0 top-0 z-50 border-b border-line bg-surface/80 backdrop-blur-md"
   >
-    <nav class="mx-auto flex h-16 max-w-content items-center justify-between px-6">
+    <nav class="site-header__bar mx-auto flex max-w-content items-center justify-between px-6">
       <RouterLink
         to="/"
-        class="group inline-flex items-center gap-2.5"
+        class="site-header__brand group inline-flex items-center gap-2.5 outline-none"
         aria-label="Tekkisma — inicio"
+        @mousedown.prevent
       >
         <BrandMark
           size="sm"
@@ -57,17 +58,17 @@ watch(
         <li v-for="link in navLinks" :key="link.key">
           <RouterLink
             :to="link.to"
-            class="group inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-ink-muted transition-colors duration-280 hover:text-ink"
+            class="site-header__nav-link group inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-ink-muted transition-colors duration-280 hover:text-ink"
             active-class="!text-ink"
             exact-active-class="!text-ink"
           >
-            <span class="font-mono text-[0.65rem] text-accent">{{ link.index }}</span>
+            <span class="site-header__nav-index text-[0.65rem] text-accent">{{ link.index }}</span>
             {{ link.label }}
           </RouterLink>
         </li>
       </ul>
 
-      <div class="hidden items-center gap-3 md:flex">
+      <div class="site-header__locale hidden items-center md:flex">
         <LanguageToggle />
       </div>
 
@@ -121,16 +122,16 @@ watch(
           <li v-for="link in navLinks" :key="link.key">
             <RouterLink
               :to="link.to"
-              class="flex items-center gap-3 rounded-md px-3 py-3 text-base font-medium text-ink-muted transition-colors duration-280 hover:bg-surface-muted hover:text-ink"
+              class="site-header__nav-link flex items-center gap-3 rounded-md px-3 py-3 text-base font-medium text-ink-muted transition-colors duration-280 hover:bg-surface-muted hover:text-ink"
               active-class="!text-ink bg-surface-muted"
               exact-active-class="!text-ink bg-surface-muted"
             >
-              <span class="font-mono text-xs text-accent">{{ link.index }}</span>
+              <span class="site-header__nav-index text-xs text-accent">{{ link.index }}</span>
               {{ link.label }}
             </RouterLink>
           </li>
         </ul>
-        <div class="mt-4 border-t border-line pt-4">
+        <div class="site-header__locale mt-4 border-t border-line pt-4">
           <LanguageToggle />
         </div>
       </div>

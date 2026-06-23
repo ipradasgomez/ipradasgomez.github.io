@@ -1,15 +1,31 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import { fetchJson } from '../api/fetchJson'
 import { useLocale } from '../composables/useLocale'
 import SectionHeading from '../components/ui/SectionHeading.vue'
 import RevealBlock from '../components/ui/RevealBlock.vue'
-import Card from '../components/ui/Card.vue'
-import Tag from '../components/ui/Tag.vue'
+import BlogTagCloud from '../components/blog/BlogTagCloud.vue'
+import BlogPostRow from '../components/blog/BlogPostRow.vue'
 
 const { t, tr } = useLocale()
 const posts = ref([])
 const loaded = ref(false)
+const activeTag = ref(null)
+
+const allTags = computed(() => {
+  const tags = new Set()
+  for (const post of posts.value) {
+    for (const tag of post.tags ?? []) tags.add(tag)
+  }
+  return [...tags].sort((a, b) => a.localeCompare(b))
+})
+
+const filteredPosts = computed(() => {
+  if (!activeTag.value) return posts.value
+  return posts.value.filter((post) => post.tags?.includes(activeTag.value))
+})
+
+const showTagCloud = computed(() => allTags.value.length > 0)
 
 onMounted(async () => {
   try {
@@ -21,22 +37,13 @@ onMounted(async () => {
   }
 })
 
-function formatDate(value) {
-  if (!value) return ''
-  try {
-    return new Date(value).toLocaleDateString(undefined, {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-    })
-  } catch {
-    return value
-  }
+function selectTag(tag) {
+  activeTag.value = tag
 }
 </script>
 
 <template>
-  <section class="mx-auto max-w-content px-6 pt-16 sm:pt-20">
+  <section class="page-section">
     <RevealBlock>
       <SectionHeading
         :index="t('sections.blog.index')"
@@ -45,31 +52,45 @@ function formatDate(value) {
       />
     </RevealBlock>
 
-    <div v-if="loaded && posts.length" class="mt-12 grid gap-5 sm:grid-cols-2">
-      <RevealBlock
-        v-for="(post, i) in posts"
-        :key="post.slug || post.title"
-        :delay="i * 80"
-      >
-        <Card tag="article" class="h-full">
-          <p class="font-mono text-xs text-ink-subtle">{{ formatDate(post.date) }}</p>
-          <h2 class="mt-2 text-lg font-bold text-ink">{{ tr(post.title) }}</h2>
-          <p class="mt-2 text-sm leading-relaxed text-ink-muted">
-            {{ tr(post.excerpt) }}
-          </p>
-          <div v-if="post.tags?.length" class="mt-4 flex flex-wrap gap-2">
-            <Tag v-for="tag in post.tags" :key="tag">{{ tag }}</Tag>
-          </div>
-        </Card>
+    <template v-if="loaded && posts.length">
+      <RevealBlock v-if="showTagCloud" :delay="60" class="mt-10">
+        <BlogTagCloud
+          :tags="allTags"
+          :active-tag="activeTag"
+          :all-label="t('blog.filter_all')"
+          @select="selectTag"
+        />
       </RevealBlock>
-    </div>
+
+      <div class="blog-list mt-10">
+        <RevealBlock
+          v-for="(post, i) in filteredPosts"
+          :key="post.slug || tr(post.title)"
+          :delay="80 + i * 70"
+        >
+          <BlogPostRow :post="post" :index="i" />
+        </RevealBlock>
+
+        <RevealBlock v-if="!filteredPosts.length" :delay="80">
+          <div class="blog-empty-filter py-16 text-center">
+            <p class="font-mono text-sm text-accent">{{ t('blog.filter_empty_kicker') }}</p>
+            <p class="mt-3 text-sm text-ink-muted">{{ t('blog.filter_empty_body') }}</p>
+            <button
+              type="button"
+              class="mt-6 font-mono text-xs uppercase tracking-[0.2em] text-accent transition hover:text-brand-300"
+              @click="selectTag(null)"
+            >
+              {{ t('blog.filter_all') }}
+            </button>
+          </div>
+        </RevealBlock>
+      </div>
+    </template>
 
     <RevealBlock v-else-if="loaded" :delay="80" class="mt-12">
-      <div
-        class="rounded-lg border border-dashed border-line-strong bg-surface-muted px-8 py-16 text-center"
-      >
+      <div class="empty-state">
         <p class="font-mono text-sm text-accent">~/blog</p>
-        <h2 class="mt-4 text-2xl font-bold text-ink">{{ t('blog.empty_title') }}</h2>
+        <h2 class="title-empty mt-4">{{ t('blog.empty_title') }}</h2>
         <p class="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink-muted">
           {{ t('blog.empty_body') }}
         </p>

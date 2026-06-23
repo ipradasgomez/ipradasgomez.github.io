@@ -28,11 +28,19 @@ export const messages = {
       contact: { index: '05', kicker: 'Escríbeme' },
     },
     stack: { title: 'Stack técnico' },
-    experience: { current: 'Actual' },
+    experience: { current: 'Actual', expand: 'Ver más', collapse: 'Recoger', type_action: 'Acciones', type_achievement: 'Logros' },
     blog: {
       empty_title: 'Próximamente',
       empty_body:
         'Estoy preparando los primeros artículos sobre backend, arquitectura y liderazgo técnico. Vuelve pronto.',
+      back: 'Volver al blog',
+      read_more: 'Leer artículo',
+      reading_time: 'min de lectura',
+      filter_all: 'Todos',
+      filter_empty_kicker: 'Sin resultados',
+      filter_empty_body: 'Ningún artículo coincide con ese tag. Prueba con otro filtro.',
+      not_found_title: 'Artículo no encontrado',
+      not_found_body: 'Puede que el enlace esté roto o el artículo ya no esté publicado.',
     },
     contact: {
       social: 'En redes',
@@ -40,7 +48,7 @@ export const messages = {
     footer: {
       tagline: 'Tech Lead y Backend Engineer.',
       nav: 'Navegación',
-      built: 'Hecho por mí. Obviamente.',
+      built: 'Hecho por mí. Obviamente. Usando IA. También obviamente.',
       rights: 'Todos los derechos reservados.',
     },
     locale: { label: 'Idioma' },
@@ -73,11 +81,25 @@ export const messages = {
       contact: { index: '05', kicker: 'Say hello' },
     },
     stack: { title: 'Tech stack' },
-    experience: { current: 'Current' },
+    experience: {
+      current: 'Current',
+      expand: 'Read more',
+      collapse: 'Collapse',
+      type_action: 'Actions',
+      type_achievement: 'Achievements',
+    },
     blog: {
       empty_title: 'Coming soon',
       empty_body:
         "I'm preparing the first articles on backend, architecture and technical leadership. Check back soon.",
+      back: 'Back to blog',
+      read_more: 'Read article',
+      reading_time: 'min read',
+      filter_all: 'All',
+      filter_empty_kicker: 'No matches',
+      filter_empty_body: 'No articles match that tag. Try another filter.',
+      not_found_title: 'Article not found',
+      not_found_body: 'The link may be broken or the article is no longer published.',
     },
     contact: {
       social: 'On socials',
@@ -85,7 +107,7 @@ export const messages = {
     footer: {
       tagline: 'Tech Lead and Backend Engineer.',
       nav: 'Navigation',
-      built: 'Built by me. Obviously.',
+      built: 'Built by me. Obviously. Using AI. Also Obviously.',
       rights: 'All rights reserved.',
     },
     locale: { label: 'Language' },

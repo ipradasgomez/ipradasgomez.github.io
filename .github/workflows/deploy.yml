@@ -36,8 +36,8 @@ jobs:
         env:
           TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-          # Deploy runs on main — Tina Cloud must index this branch (not develop).
           TINA_BRANCH: ${{ github.ref_name }}
+          NODE_OPTIONS: --max-old-space-size=4096
         run: npm run build
 
       - name: Setup Pages
