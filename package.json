@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && cp dist/index.html dist/404.html",
+    "dev": "tinacms dev -c \"vite\"",
+    "posts:sync": "node scripts/generate-posts.mjs",
+    "build": "node scripts/build.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -13,10 +14,13 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "@tinacms/cli": "^2.5.1",
     "@vitejs/plugin-vue": "^5.2.4",
     "autoprefixer": "^10.4.21",
+    "gray-matter": "^4.0.3",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
+    "tinacms": "^3.9.3",
     "vite": "^6.4.3"
   }
 }
