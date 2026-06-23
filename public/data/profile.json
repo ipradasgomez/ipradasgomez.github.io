@@ -1,77 +1,123 @@
 {
-  "meta": {
-    "title": "Ismael | Backend Developer & Tech Lead",
-    "description": "Tech Lead y Backend Engineer. Escalo plataformas y equipos para convertir complejidad técnica en resultados de negocio."
-  },
   "person": {
     "name": "Ismael Pradas",
-    "title": "Tech Lead | Backend Engineer",
+    "role": {
+      "es": "Tech Lead · Backend Engineer",
+      "en": "Tech Lead · Backend Engineer"
+    },
     "avatar": "https://avatars.githubusercontent.com/u/45384098?v=4",
-    "location": "Utrera, ES",
-    "contacts": "500+",
-    "followers": "691",
-    "github": {
-      "handle": "ipradasgomez",
-      "url": "https://github.com/ipradasgomez"
-    }
+    "location": { "es": "Málaga, España", "en": "Málaga, Spain" },
+    "email": "contacto@tekkisma.es",
+    "github": { "handle": "ipradasgomez", "url": "https://github.com/ipradasgomez" },
+    "linkedin": { "handle": "tech-isma", "url": "https://www.linkedin.com/in/tech-isma/" }
   },
   "hero": {
-    "badge": "Backend + Tech Leadership",
-    "headline": "Escalo plataformas y equipos para convertir complejidad técnica en resultados de negocio.",
-    "description": "Soy Ismael Pradas, Tech Lead y Backend Engineer. Diseño sistemas robustos, lidero migraciones y aplico IA de forma práctica para aumentar la velocidad del equipo sin perder criterio de ingeniería.",
-    "email": "contacto@tekkisma.es",
-    "linkedin": {
-      "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/tech-isma/"
+    "title": {
+      "es": "Backend, liderazgo técnico e IA con criterio.",
+      "en": "Backend, technical leadership and AI with judgement."
+    },
+    "headline": {
+      "es": "Convierto complejidad técnica en plataformas y equipos que escalan.",
+      "en": "I turn technical complexity into platforms and teams that scale."
+    },
+    "intro": {
+      "es": "Tech Lead y Backend Engineer. Diseño sistemas robustos, lidero migraciones y aplico IA con criterio de ingeniería para que el equipo avance más rápido sin perder calidad.",
+      "en": "Tech Lead and Backend Engineer. I design robust systems, lead migrations and apply AI with engineering judgement so the team moves faster without losing quality."
     }
   },
-  "value": {
-    "eyebrow": "Propuesta de valor",
-    "title": "Ingeniería clásica con mentalidad de producto y foco en impacto.",
-    "description": "He construido y evolucionado sistemas core de negocio, modernizado plataformas legacy y optimizado pipelines críticos para reducir tiempos y costes de forma medible. Trabajo donde se cruzan arquitectura, execution y liderazgo técnico.",
+  "heroSummary": {
+    "value": "8+",
+    "label": { "es": "años de experiencia", "en": "years of experience" }
+  },
+  "about": {
+    "lead": {
+      "es": "Ingeniería clásica con mentalidad de producto y foco en impacto.",
+      "en": "Classic engineering with a product mindset and a focus on impact."
+    },
+    "paragraphs": {
+      "es": [
+        "Soy Ismael Pradas, Tech Lead y Backend Engineer afincado en Málaga. He construido y evolucionado sistemas core de negocio, modernizado plataformas legacy y optimizado pipelines críticos para reducir tiempos y costes de forma medible.",
+        "Trabajo donde se cruzan arquitectura, ejecución y liderazgo técnico: alineo equipo, calidad y entrega para que producto y tecnología avancen juntos. Uso la IA como multiplicador de productividad, siempre con juicio ingenieril como base."
+      ],
+      "en": [
+        "I'm Ismael Pradas, a Tech Lead and Backend Engineer based in Málaga, Spain. I've built and evolved core business systems, modernized legacy platforms and optimized critical pipelines to cut time and cost in measurable ways.",
+        "I work where architecture, execution and technical leadership meet: aligning team, quality and delivery so product and engineering move together. I use AI as a productivity multiplier, always grounded in engineering judgement."
+      ]
+    },
     "highlights": [
       {
-        "title": "Liderazgo técnico",
-        "description": "Alineo equipo, calidad y entrega para que producto y tecnología avancen juntos."
+        "title": { "es": "Liderazgo técnico", "en": "Technical leadership" },
+        "description": {
+          "es": "Alineo equipo, calidad y entrega para que producto y tecnología avancen juntos.",
+          "en": "I align team, quality and delivery so product and engineering advance together."
+        }
       },
       {
-        "title": "AI con criterio",
-        "description": "Uso IA como multiplicador de productividad, con juicio ingenieril como base."
+        "title": { "es": "IA con criterio", "en": "AI with judgement" },
+        "description": {
+          "es": "Uso la IA como multiplicador de productividad, con criterio de ingeniería como base.",
+          "en": "I use AI as a productivity multiplier, grounded in engineering judgement."
+        }
+      },
+      {
+        "title": { "es": "Arquitectura escalable", "en": "Scalable architecture" },
+        "description": {
+          "es": "Diseño sistemas robustos pensados para crecer sin acumular deuda innecesaria.",
+          "en": "I design robust systems meant to grow without piling on needless debt."
+        }
       }
     ]
   },
   "experience": [
     {
-      "role": "Tech Lead · Magnific (formerly Freepik)",
-      "period": "abr. 2026 - actualidad · remoto"
+      "company": "Magnific (antes Freepik)",
+      "role": { "es": "Tech Lead", "en": "Tech Lead" },
+      "period": { "es": "abr. 2026 — actualidad · remoto", "en": "Apr 2026 — present · remote" },
+      "current": true,
+      "description": {
+        "es": "Lidero el desarrollo backend de producto, definiendo arquitectura y las prácticas de ingeniería del equipo.",
+        "en": "Leading product backend development, defining architecture and the team's engineering practices."
+      }
     },
     {
-      "role": "Tech Lead / Backend Engineer · Freepik Company",
-      "period": "ago. 2020 - abr. 2026"
+      "company": "Freepik Company",
+      "role": { "es": "Tech Lead / Backend Engineer", "en": "Tech Lead / Backend Engineer" },
+      "period": { "es": "ago. 2020 — abr. 2026", "en": "Aug 2020 — Apr 2026" },
+      "current": false,
+      "description": {
+        "es": "Lideré iniciativas backend y migraciones de plataforma, combinando arquitectura, ejecución y mentoring del equipo.",
+        "en": "Led backend initiatives and platform migrations, combining architecture, execution and team mentoring."
+      }
     },
     {
-      "role": "Backend Developer · Cash Converters España",
-      "period": "jun. 2019 - ago. 2020",
-      "note": "Pipeline de precios de 1h+ a menos de 5 min."
+      "company": "Cash Converters España",
+      "role": { "es": "Backend Developer", "en": "Backend Developer" },
+      "period": { "es": "jun. 2019 — ago. 2020", "en": "Jun 2019 — Aug 2020" },
+      "current": false,
+      "description": {
+        "es": "Reduje el pipeline de precios de más de 1h a menos de 5 minutos.",
+        "en": "Cut the pricing pipeline from over 1h to under 5 minutes."
+      }
     }
   ],
   "stack": [
-    "Laravel",
-    "PHP",
-    "PostgreSQL",
-    "MySQL",
-    "MongoDB",
-    "Docker",
-    "Vue",
-    "Filament",
-    "Tailwind CSS"
+    {
+      "group": { "es": "Lenguajes & Frameworks", "en": "Languages & Frameworks" },
+      "items": ["PHP", "Laravel", "Filament", "Vue", "Tailwind CSS"]
+    },
+    {
+      "group": { "es": "Bases de datos", "en": "Databases" },
+      "items": ["PostgreSQL", "MySQL", "MongoDB"]
+    },
+    {
+      "group": { "es": "Herramientas", "en": "Tooling" },
+      "items": ["Docker", "Git", "CI/CD"]
+    }
   ],
-  "footer": {
-    "tagline": "Tech Lead y Backend Engineer orientado a plataformas escalables.",
-    "skills": [
-      "Backend architecture",
-      "Platform modernization",
-      "Classic engineering + practical AI"
-    ]
+  "contact": {
+    "lead": {
+      "es": "¿Tienes un reto técnico, una oportunidad o simplemente quieres saludar? Mi bandeja siempre está abierta.",
+      "en": "Got a technical challenge, an opportunity or just want to say hi? My inbox is always open."
+    }
   }
 }

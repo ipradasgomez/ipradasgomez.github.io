@@ -2,14 +2,8 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const props = defineProps({
-  delay: {
-    type: Number,
-    default: 0,
-  },
-  tag: {
-    type: String,
-    default: 'div',
-  },
+  delay: { type: Number, default: 0 },
+  tag: { type: String, default: 'div' },
 })
 
 const root = ref(null)
@@ -18,7 +12,6 @@ let observer = null
 
 onMounted(() => {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
   if (reducedMotion || !('IntersectionObserver' in window)) {
     visible.value = true
     return
@@ -34,14 +27,10 @@ onMounted(() => {
     { threshold: 0.12, rootMargin: '0px 0px -40px 0px' },
   )
 
-  if (root.value) {
-    observer.observe(root.value)
-  }
+  if (root.value) observer.observe(root.value)
 })
 
-onBeforeUnmount(() => {
-  observer?.disconnect()
-})
+onBeforeUnmount(() => observer?.disconnect())
 </script>
 
 <template>

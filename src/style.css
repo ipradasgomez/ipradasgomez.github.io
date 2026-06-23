@@ -2,69 +2,162 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =====================================================================
+   Design tokens — tekkisma.es
+   Dark editorial, warm near-black + single orange accent.
+   ===================================================================== */
 :root {
-  --color-surface: #0a0a0a;
-  --color-surface-elevated: #171717;
-  --color-surface-muted: rgba(23, 23, 23, 0.7);
+  /* Color tokens as RGB channels so Tailwind opacity modifiers work. */
+  /* Brand scale (orange) */
+  --c-brand-50: 255 247 237;
+  --c-brand-100: 255 237 213;
+  --c-brand-200: 254 215 170;
+  --c-brand-300: 253 186 116;
+  --c-brand-400: 251 146 60;
+  --c-brand-500: 249 115 22;
+  --c-brand-600: 234 88 12;
+  --c-brand-700: 194 65 12;
+  --c-brand-900: 124 45 18;
 
-  --color-brand-50: #fff7ed;
-  --color-brand-100: #ffedd5;
-  --color-brand-200: #fed7aa;
-  --color-brand-300: #fdba74;
-  --color-brand-400: #fb923c;
-  --color-brand-500: #f97316;
-  --color-brand-600: #ea580c;
-  --color-brand-700: #c2410c;
-  --color-brand-900: #7c2d12;
+  /* Accent (semantic alias to brand) */
+  --c-accent: var(--c-brand-500);
+  --c-accent-soft: var(--c-brand-300);
 
-  --color-isma-black: var(--color-surface);
-  --color-isma-orange: var(--color-brand-500);
-  --color-isma-orange-muted: var(--color-brand-300);
+  /* Semantic surfaces (warm ink, not flat black) */
+  --c-surface: 12 11 10;
+  --c-surface-elevated: 21 19 15;
 
-  --font-isma-sans: 'Manrope', system-ui, sans-serif;
+  /* Text (warm off-white -> stone) */
+  --c-ink: 245 241 234;
+  --c-ink-muted: 179 170 160;
+  --c-ink-subtle: 131 123 114;
+
+  /* Literal helpers used directly inside CSS below */
+  --color-border-strong: rgb(245 241 234 / 0.16);
+
+  /* Typography */
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, monospace;
+
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  /* Shadows / glows */
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 18px 40px -24px rgb(0 0 0 / 0.7);
+  --glow-accent: 0 0 0 1px rgb(249 115 22 / 0.12), 0 18px 50px -20px rgb(249 115 22 / 0.35);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-surface font-sans text-slate-100 antialiased;
+  @apply bg-surface font-sans text-ink antialiased;
+  background-image:
+    radial-gradient(60rem 32rem at 50% -8rem, rgba(249, 115, 22, 0.08), transparent 70%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(249, 115, 22, 0.28);
+  color: #fff;
+}
+
+/* Slim, on-brand scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(249, 115, 22, 0.4) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(249, 115, 22, 0.35);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
 }
 
 @layer components {
+  /* Mono eyebrow / section index label */
+  .kicker {
+    @apply inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-brand-400;
+  }
+
+  /* Fluid display type for hero */
+  .display {
+    font-size: clamp(2.75rem, 8vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+  }
+
+  .headline {
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+
+  /* Animated underline for inline links */
+  .link-underline {
+    @apply relative transition-colors duration-280;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 280ms var(--ease-out), color 280ms var(--ease-out);
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+
+  /* Reveal on scroll */
   .reveal {
     opacity: 0;
-    transform: translateY(16px) scale(0.995);
+    transform: translateY(18px);
     transition:
-      opacity 520ms ease,
-      transform 520ms ease;
+      opacity 600ms var(--ease-out),
+      transform 600ms var(--ease-out);
     transition-delay: var(--reveal-delay, 0ms);
   }
-
   .reveal.is-visible {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 
+  /* Card hover lift */
   .hover-lift {
-    @apply transition-[transform,border-color,box-shadow] duration-280 ease-out;
+    @apply transition-[transform,border-color,box-shadow] duration-280;
+    transition-timing-function: var(--ease-out);
   }
-
   .hover-lift:hover {
-    transform: translateY(-3px);
-    border-color: rgba(251, 146, 60, 0.45);
-    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.12);
+    transform: translateY(-4px);
+    border-color: var(--color-border-strong);
+    box-shadow: var(--glow-accent);
   }
 
+  /* Primary CTA glow */
   .cta-glow {
-    box-shadow: 0 0 0 rgba(249, 115, 22, 0);
-    @apply transition-[box-shadow,transform,background-color] duration-300 ease-out;
+    @apply transition-[box-shadow,transform,background-color] duration-300;
+    transition-timing-function: var(--ease-out);
   }
-
   .cta-glow:hover {
     transform: translateY(-1px);
-    box-shadow: 0 10px 24px rgba(249, 115, 22, 0.28);
+    box-shadow: var(--glow-accent);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   .reveal,
   .hover-lift,
   .cta-glow {
