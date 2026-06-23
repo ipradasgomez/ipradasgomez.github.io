@@ -24,10 +24,14 @@ const navLinks = computed(() => links.map((l) => ({ ...l, label: t(`nav.${l.key}
     <div class="mx-auto max-w-content px-6 py-12">
       <div class="grid gap-10 md:grid-cols-[1.5fr,1fr,1fr]">
         <div>
-          <p class="inline-flex items-center gap-2.5">
-            <BrandMark size="sm" label="Ismael Pradas" />
-            <span class="text-sm font-semibold text-ink">Ismael Pradas</span>
-          </p>
+          <RouterLink to="/" class="group inline-flex items-center gap-2.5">
+            <BrandMark
+              size="sm"
+              label="Tekkisma"
+              class="transition-transform duration-280 group-hover:-rotate-6"
+            />
+            <span class="text-sm font-semibold tracking-tight text-ink">Tekkisma</span>
+          </RouterLink>
           <p class="mt-4 max-w-xs text-sm leading-relaxed text-ink-muted">
             {{ t('footer.tagline') }}
           </p>
@@ -85,7 +89,7 @@ const navLinks = computed(() => links.map((l) => ({ ...l, label: t(`nav.${l.key}
       <div
         class="mt-10 flex flex-col gap-2 border-t border-line pt-6 text-xs text-ink-subtle sm:flex-row sm:items-center sm:justify-between"
       >
-        <p class="font-mono">© {{ year }} Ismael Pradas — tekkisma.es</p>
+        <p class="font-mono">© {{ year }} tekkisma.es</p>
         <p>{{ t('footer.built') }}</p>
       </div>
     </div>
