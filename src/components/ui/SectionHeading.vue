@@ -13,11 +13,11 @@ defineProps({
       <span v-if="index && kicker" class="text-line-strong">/</span>
       <span v-if="kicker">{{ kicker }}</span>
     </p>
-    <h1 class="mt-4 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+    <h1 class="title-section mt-4">
       {{ title }}
       <span class="text-accent">.</span>
     </h1>
-    <p v-if="$slots.default" class="mt-4 text-base leading-relaxed text-ink-muted">
+    <p v-if="$slots.default" class="text-body mt-4">
       <slot />
     </p>
   </header>

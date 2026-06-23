@@ -7,4 +7,4 @@ dev-down:
 	$(COMPOSE) down
 
 build-check:
-	$(COMPOSE) run --rm dev sh -c "npm install && npm run build"
+	$(COMPOSE) run --rm dev sh -c "npm install && NODE_OPTIONS=--max-old-space-size=4096 npm run build"

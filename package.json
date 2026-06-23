@@ -5,15 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "tinacms dev -c \"vite\"",
+    "tina:audit": "tinacms audit",
+    "tina:clean": "node scripts/clean-tina-cache.mjs",
     "posts:sync": "node scripts/generate-posts.mjs",
+    "experience:sync": "node scripts/generate-experience.mjs",
     "build": "node scripts/build.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
+    "marked": "^15.0.12",
     "vue": "^3.5.38",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@tinacms/cli": "^2.5.1",
     "@vitejs/plugin-vue": "^5.2.4",
     "autoprefixer": "^10.4.21",

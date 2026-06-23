@@ -1,0 +1,43 @@
+{
+  "slug": "welcome",
+  "date": "2026-06-23T17:03:45.666Z",
+  "published": true,
+  "author": "Ismael Pradas",
+  "coverImage": null,
+  "previewImage": null,
+  "title": {
+    "es": "¡Bienvenido!",
+    "en": "Welcome!"
+  },
+  "summary": {
+    "es": "Bienvenido al blog.",
+    "en": "Welcome to the blog."
+  },
+  "excerpt": {
+    "es": "Bienvenido al blog.",
+    "en": "Welcome to the blog."
+  },
+  "body": {
+    "es": "welcome",
+    "en": "welcome"
+  },
+  "tags": [
+    "welcome"
+  ],
+  "readingTime": {
+    "es": 1,
+    "en": 1
+  },
+  "share": {
+    "title": {
+      "es": "¡Bienvenido!",
+      "en": "Welcome!"
+    },
+    "description": {
+      "es": "Bienvenido al blog.",
+      "en": "Welcome to the blog."
+    },
+    "image": null,
+    "url": "https://tekkisma.es/blog/welcome"
+  }
+}

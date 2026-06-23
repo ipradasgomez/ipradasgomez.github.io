@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "magnific-tech-lead",
+    "company": "Magnific (antes Freepik)",
+    "role": {
+      "es": "Tech Lead",
+      "en": "Tech Lead"
+    },
+    "period": {
+      "es": "abr. 2026 — actualidad · remoto",
+      "en": "Apr 2026 — present · remote"
+    },
+    "current": true,
+    "description": {
+      "es": "Lidero el desarrollo backend de producto, definiendo arquitectura y las prácticas de ingeniería del equipo.",
+      "en": "Leading product backend development, defining architecture and the team's engineering practices."
+    },
+    "highlights": [],
+    "startDate": "2026-04-01T00:00:00.000Z"
+  },
+  {
+    "slug": "freepik-tech-lead",
+    "company": "Freepik Company",
+    "role": {
+      "es": "Tech Lead / Backend Engineer",
+      "en": "Tech Lead / Backend Engineer"
+    },
+    "period": {
+      "es": "ago. 2020 — abr. 2026",
+      "en": "Aug 2020 — Apr 2026"
+    },
+    "current": false,
+    "description": {
+      "es": "Lideré iniciativas backend y migraciones de plataforma, combinando arquitectura, ejecución y mentoring del equipo.",
+      "en": "Led backend initiatives and platform migrations, combining architecture, execution and team mentoring."
+    },
+    "highlights": [
+      {
+        "type": "action",
+        "text": {
+          "es": "Definí la arquitectura de servicios core y los estándares de revisión y despliegue del equipo backend.",
+          "en": "Defined core service architecture and backend review and deployment standards for the team."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Mentoría técnica y acompañamiento en migraciones de plataforma legacy.",
+          "en": "Technical mentoring and hands-on support during legacy platform migrations."
+        }
+      },
+      {
+        "type": "achievement",
+        "text": {
+          "es": "Reducción medible de tiempos en pipelines críticos y deuda técnica en módulos de alto tráfico.",
+          "en": "Measurable cuts to critical pipeline runtimes and technical debt in high-traffic modules."
+        }
+      }
+    ],
+    "startDate": "2020-08-01T00:00:00.000Z"
+  },
+  {
+    "slug": "cash-converters-backend",
+    "company": "Cash Converters España",
+    "role": {
+      "es": "Backend Developer",
+      "en": "Backend Developer"
+    },
+    "period": {
+      "es": "jun. 2019 — ago. 2020",
+      "en": "Jun 2019 — Aug 2020"
+    },
+    "current": false,
+    "description": {
+      "es": "Reduje el pipeline de precios de más de 1h a menos de 5 minutos.",
+      "en": "Cut the pricing pipeline from over 1h to under 5 minutes."
+    },
+    "highlights": [],
+    "startDate": "2019-06-01T00:00:00.000Z"
+  }
+]

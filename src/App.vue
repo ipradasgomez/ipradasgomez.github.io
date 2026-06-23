@@ -22,7 +22,7 @@ watch(
 <template>
   <div class="flex min-h-screen flex-col">
     <AppNav />
-    <main class="flex-1 pt-16">
+    <main class="site-main flex-1">
       <RouterView v-slot="{ Component }">
         <Transition
           mode="out-in"
