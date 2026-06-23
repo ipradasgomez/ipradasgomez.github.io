@@ -14,6 +14,8 @@ export default defineConfig({
   build: {
     outputFolder: 'admin',
     publicFolder: 'public',
+    // Required for Docker: Tina admin assets load from :4001 on the host browser.
+    host: true,
   },
 
   media: {
