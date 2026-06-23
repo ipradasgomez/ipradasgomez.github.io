@@ -5,30 +5,52 @@ export default {
     extend: {
       colors: {
         surface: {
-          DEFAULT: 'var(--color-surface)',
-          elevated: 'var(--color-surface-elevated)',
-          muted: 'var(--color-surface-muted)',
+          DEFAULT: 'rgb(var(--c-surface) / <alpha-value>)',
+          elevated: 'rgb(var(--c-surface-elevated) / <alpha-value>)',
+          muted: 'rgb(var(--c-ink) / 0.03)',
+        },
+        line: {
+          DEFAULT: 'rgb(var(--c-ink) / 0.09)',
+          strong: 'rgb(var(--c-ink) / 0.16)',
+        },
+        ink: {
+          DEFAULT: 'rgb(var(--c-ink) / <alpha-value>)',
+          muted: 'rgb(var(--c-ink-muted) / <alpha-value>)',
+          subtle: 'rgb(var(--c-ink-subtle) / <alpha-value>)',
         },
         brand: {
-          50: 'var(--color-brand-50)',
-          100: 'var(--color-brand-100)',
-          200: 'var(--color-brand-200)',
-          300: 'var(--color-brand-300)',
-          400: 'var(--color-brand-400)',
-          500: 'var(--color-brand-500)',
-          600: 'var(--color-brand-600)',
-          700: 'var(--color-brand-700)',
-          900: 'var(--color-brand-900)',
+          50: 'rgb(var(--c-brand-50) / <alpha-value>)',
+          100: 'rgb(var(--c-brand-100) / <alpha-value>)',
+          200: 'rgb(var(--c-brand-200) / <alpha-value>)',
+          300: 'rgb(var(--c-brand-300) / <alpha-value>)',
+          400: 'rgb(var(--c-brand-400) / <alpha-value>)',
+          500: 'rgb(var(--c-brand-500) / <alpha-value>)',
+          600: 'rgb(var(--c-brand-600) / <alpha-value>)',
+          700: 'rgb(var(--c-brand-700) / <alpha-value>)',
+          900: 'rgb(var(--c-brand-900) / <alpha-value>)',
         },
-        isma: {
-          black: 'var(--color-isma-black)',
-          orange: 'var(--color-isma-orange)',
-          'orange-muted': 'var(--color-isma-orange-muted)',
+        accent: {
+          DEFAULT: 'rgb(var(--c-accent) / <alpha-value>)',
+          soft: 'rgb(var(--c-accent-soft) / <alpha-value>)',
         },
       },
       fontFamily: {
-        isma: ['var(--font-isma-sans)', 'system-ui', 'sans-serif'],
-        sans: ['var(--font-isma-sans)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-sans)'],
+        mono: ['var(--font-mono)'],
+      },
+      borderRadius: {
+        sm: 'var(--radius-sm)',
+        md: 'var(--radius-md)',
+        lg: 'var(--radius-lg)',
+        xl: 'var(--radius-xl)',
+      },
+      boxShadow: {
+        card: 'var(--shadow-card)',
+        glow: 'var(--glow-accent)',
+      },
+      maxWidth: {
+        content: '64rem',
+        prose: '42rem',
       },
       transitionDuration: {
         280: '280ms',

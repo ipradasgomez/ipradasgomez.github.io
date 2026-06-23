@@ -2,3 +2,12 @@ node_modules/
 dist/
 .DS_Store
 *.local
+.env
+.env.local
+
+# Tina — commit tina/tina-lock.json; generated admin + types are rebuilt locally/CI
+tina/__generated__/
+public/admin/index.html
+public/admin/assets/
+public/uploads/
+
