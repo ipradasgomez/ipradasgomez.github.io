@@ -22,8 +22,70 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="/mnt.js"></script>
+    <script>
+      (function () {
+        var ON = { true: 1, 1: 1, yes: 1, on: 1 }
+        var OFF = { false: 1, 0: 1, 2: 1, no: 1, off: 1 }
+        function parse(v) {
+          if (v == null || v === '') return null
+          v = String(v).trim().toLowerCase()
+          if (ON[v]) return true
+          if (OFF[v]) return false
+          return null
+        }
+        var ls = parse(localStorage.getItem('mnt'))
+        var site = parse(window.__SITE_MNT__)
+        if (site === null && typeof window.__SITE_MNT__ === 'boolean') {
+          site = window.__SITE_MNT__
+        }
+        var active = ls !== null ? ls : site === true
+        window.__MNT_ACTIVE__ = active
+        if (active) document.documentElement.classList.add('mnt')
+      })()
+    </script>
+    <style>
+      #mnt-shell {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        background: rgb(12 11 10);
+        background-image: radial-gradient(
+          60rem 32rem at 50% -8rem,
+          rgb(249 115 22 / 0.08),
+          transparent 70%
+        );
+      }
+      html.mnt #mnt-shell {
+        display: flex;
+      }
+      html.mnt #app {
+        visibility: hidden;
+      }
+      #mnt-shell img {
+        height: 12rem;
+        width: auto;
+        object-fit: contain;
+      }
+      @media (min-width: 640px) {
+        #mnt-shell img {
+          height: 16rem;
+        }
+      }
+      @media (min-width: 768px) {
+        #mnt-shell img {
+          height: 20rem;
+        }
+      }
+    </style>
   </head>
   <body>
+    <div id="mnt-shell" aria-hidden="true">
+      <img src="/favicon.svg" alt="" />
+    </div>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
