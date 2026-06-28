@@ -10,4 +10,6 @@ tina/__generated__/
 public/admin/index.html
 public/admin/assets/
 public/uploads/
+public/robots.txt
+public/sitemap.xml
 

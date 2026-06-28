@@ -49,6 +49,7 @@ function selectTag(tag) {
         :index="t('sections.blog.index')"
         :kicker="t('sections.blog.kicker')"
         :title="t('nav.blog')"
+        accent-first
       />
     </RevealBlock>
 

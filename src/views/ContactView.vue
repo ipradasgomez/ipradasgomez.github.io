@@ -15,6 +15,7 @@ const { t, tr } = useLocale()
         :index="t('sections.contact.index')"
         :kicker="t('sections.contact.kicker')"
         :title="t('nav.contact')"
+        accent-first
       />
     </RevealBlock>
 
