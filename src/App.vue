@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import AppNav from './components/layout/AppNav.vue'
 import AppFooter from './components/layout/AppFooter.vue'
 import { useLocale } from './composables/useLocale'
+import { formatPageTitle } from './utils/pageMeta'
 
 const route = useRoute()
 const { locale, t } = useLocale()
@@ -12,8 +13,9 @@ watch(
   [() => route.name, locale],
   () => {
     const name = route.name
-    const section = name && name !== 'home' ? `${t(`nav.${name}`)} · ` : ''
-    document.title = `${section}Ismael Pradas — Tech Lead & Backend Engineer`
+    if (name === 'blog-post') return
+    const page = name && name !== 'home' ? t(`nav.${name}`) : null
+    document.title = formatPageTitle(page)
   },
   { immediate: true },
 )

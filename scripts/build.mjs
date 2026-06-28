@@ -19,6 +19,7 @@ if (hasTinaCloud) {
 // Site content (blog, profile, etc.) always comes from the repo checkout below.
 execSync('node scripts/generate-posts.mjs', { stdio: 'inherit' })
 execSync('node scripts/generate-experience.mjs', { stdio: 'inherit' })
+execSync('node scripts/generate-seo.mjs', { stdio: 'inherit' })
 execSync('vite build', { stdio: 'inherit' })
 execSync('cp dist/index.html dist/404.html', { stdio: 'inherit' })
 execSync('node scripts/generate-post-og-pages.mjs', { stdio: 'inherit' })

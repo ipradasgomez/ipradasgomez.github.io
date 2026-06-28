@@ -13,7 +13,7 @@ export const messages = {
       email: 'Escríbeme',
       github: 'GitHub',
       linkedin: 'LinkedIn',
-      experience: 'Ver trayectoria',
+      experience: 'Mi trayectoria',
       about: 'Conóceme',
       backHome: 'Volver al inicio',
     },
@@ -47,7 +47,6 @@ export const messages = {
     },
     footer: {
       tagline: 'Tech Lead y Backend Engineer.',
-      nav: 'Navegación',
       built: 'Hecho por mí. Obviamente. Usando IA. También obviamente.',
       rights: 'Todos los derechos reservados.',
     },
@@ -66,7 +65,7 @@ export const messages = {
       email: 'Get in touch',
       github: 'GitHub',
       linkedin: 'LinkedIn',
-      experience: 'See experience',
+      experience: 'My journey',
       about: 'Get to know me',
       backHome: 'Back to home',
     },
@@ -106,7 +105,6 @@ export const messages = {
     },
     footer: {
       tagline: 'Tech Lead and Backend Engineer.',
-      nav: 'Navigation',
       built: 'Built by me. Obviously. Using AI. Also Obviously.',
       rights: 'All rights reserved.',
     },

@@ -77,33 +77,24 @@ const { t, tr } = useLocale()
         </div>
 
         <RevealBlock :delay="200" class="w-full justify-self-center lg:justify-self-end">
-          <div class="mx-auto flex w-full max-w-[18rem] flex-col gap-6 sm:max-w-xs lg:mx-0 lg:max-w-none">
-            <div class="relative mx-auto lg:mx-0">
-              <div
-                class="absolute -inset-3 -z-10 rounded-xl bg-gradient-to-tr from-accent/30 via-transparent to-transparent blur-xl"
+          <div
+            class="mx-auto flex w-full max-w-xs flex-col items-center gap-10 text-center lg:mx-0 lg:items-start lg:text-left"
+          >
+            <figure class="hero-portrait">
+              <span class="hero-portrait__glow" aria-hidden="true" />
+              <img
+                :src="profile.person.avatar"
+                alt="Ismael Pradas"
+                class="hero-portrait__img"
+                loading="eager"
               />
-              <div
-                class="overflow-hidden rounded-xl border border-line-strong bg-surface-elevated p-2 shadow-card"
-              >
-                <img
-                  :src="profile.person.avatar"
-                  :alt="`Ismael Pradas`"
-                  class="h-56 w-56 rounded-lg object-cover sm:h-64 sm:w-64 lg:h-72 lg:w-72"
-                  loading="eager"
-                />
-              </div>
-            </div>
+            </figure>
 
-            <div
-              class="rounded-lg border border-line bg-surface px-6 py-6 text-center lg:text-left"
-            >
-              <p class="display !text-4xl !leading-none text-accent sm:!text-5xl">
-                {{ profile.heroSummary.value }}
-              </p>
-              <p class="mt-2 text-sm text-ink-muted">
-                {{ tr(profile.heroSummary.label) }}
-              </p>
-              <p class="mt-5 font-mono text-xs text-ink-subtle">
+            <div class="hero-stats">
+              <p class="hero-stats__value">{{ tr(profile.heroSummary.value) }}</p>
+              <p class="hero-stats__label">{{ tr(profile.heroSummary.label) }}</p>
+              <div class="accent-rule--sm mx-auto mt-4 lg:mx-0" aria-hidden="true" />
+              <p class="mt-4 font-mono text-xs text-ink-subtle">
                 {{ tr(profile.person.location) }}
               </p>
               <p class="mt-2 font-mono text-xs">
