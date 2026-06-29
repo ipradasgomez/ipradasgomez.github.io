@@ -1,11 +1,19 @@
+const SITE_NAME = 'Tekkisma'
+
 const DEFAULT = {
-  title: 'Ismael | Backend Developer & Tech Lead',
+  title: SITE_NAME,
   description:
     'Tech Lead y Backend Engineer. Escalo plataformas y equipos para convertir complejidad técnica en resultados de negocio.',
   canonical: 'https://tekkisma.es/',
-  siteName: 'Tekkisma',
+  siteName: SITE_NAME,
   type: 'website',
   image: null,
+}
+
+/** "Tekkisma" on home; "Tekkisma — Sobre mí" (etc.) on inner pages. */
+export function formatPageTitle(page) {
+  if (!page) return SITE_NAME
+  return `${SITE_NAME} — ${page}`
 }
 
 function setMeta(attr, key, content) {

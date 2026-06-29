@@ -1,3 +1,11 @@
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/manrope/700.css';
+@import '@fontsource/manrope/800.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -202,6 +210,127 @@ body {
     font-size: clamp(1.35rem, 3vw, 2rem);
     line-height: 1.15;
     letter-spacing: -0.015em;
+  }
+
+  /* ── Hero portrait (organic, box-free) ── */
+  .hero-portrait {
+    @apply relative shrink-0;
+    width: clamp(13rem, 62vw, 18rem);
+    aspect-ratio: 1;
+    isolation: isolate;
+  }
+
+  .hero-portrait__img {
+    @apply relative z-10 h-full w-full object-cover;
+    /* Soft asymmetric squircle — reads organic without cropping the face. */
+    border-radius: 56% 44% 59% 41% / 51% 45% 55% 49%;
+    box-shadow:
+      0 0 0 1px rgb(var(--c-ink) / 0.08),
+      var(--shadow-cover);
+    transition:
+      border-radius 700ms var(--ease-out),
+      transform 700ms var(--ease-out);
+  }
+
+  .hero-portrait:hover .hero-portrait__img {
+    border-radius: 47% 53% 43% 57% / 57% 48% 52% 43%;
+    transform: translateY(-4px);
+  }
+
+  .hero-portrait__glow {
+    @apply pointer-events-none absolute z-0;
+    inset: -14% -16% -18% -12%;
+    background: radial-gradient(
+      58% 58% at 34% 30%,
+      rgb(var(--c-brand-500) / 0.3) 0%,
+      transparent 70%
+    );
+    filter: blur(38px);
+  }
+
+  /* ── Hero stats (no card) ── */
+  .hero-stats__value {
+    font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    @apply text-accent;
+  }
+
+  .hero-stats__label {
+    @apply mt-2 max-w-[16rem] text-sm text-ink-muted;
+  }
+
+  /* ── About — organic narrative, no boxes ── */
+  .about-narrative > p + p {
+    @apply mt-5;
+  }
+
+  /* Highlights as a soft vertical thread instead of stacked cards.
+     Rail (ul) and dots (li) share the same x-origin so they stay aligned. */
+  .about-highlights {
+    @apply relative;
+  }
+
+  .about-highlights::before {
+    content: '';
+    @apply absolute bottom-2 top-2;
+    left: 2px;
+    width: 2px;
+    border-radius: 9999px;
+    background: linear-gradient(
+      to bottom,
+      rgb(var(--c-brand-500) / 0.7) 0%,
+      rgb(var(--c-brand-500) / 0.18) 60%,
+      transparent 100%
+    );
+  }
+
+  .about-highlight {
+    @apply relative py-4 pl-7;
+  }
+
+  .about-highlight::before {
+    content: '';
+    @apply absolute h-2 w-2 rounded-full bg-accent;
+    left: 3px;
+    top: 1.55rem;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px rgb(var(--c-surface) / 1), 0 0 16px rgb(var(--c-brand-500) / 0.5);
+    transition: transform 280ms var(--ease-out);
+  }
+
+  .about-highlight:hover::before {
+    transform: translateX(-50%) scale(1.35);
+  }
+
+  .about-highlight__title {
+    @apply text-base font-semibold text-ink;
+  }
+
+  .about-highlight__desc {
+    @apply mt-1.5 text-sm leading-relaxed text-ink-muted;
+  }
+
+  /* Stack — column rhythm with a faint leading rule, not cards */
+  .about-stack {
+    @apply grid gap-x-10 gap-y-9 sm:grid-cols-3;
+  }
+
+  .about-stack__group {
+    @apply relative pt-4;
+    border-top: 1px solid rgb(var(--c-ink) / var(--alpha-divider));
+  }
+
+  .about-stack__group::before {
+    content: '';
+    @apply absolute left-0 top-0 h-0.5 w-10 rounded-full bg-accent/70;
+    transform: translateY(-1px);
+  }
+
+  .about-stack__label {
+    @apply font-mono text-xs uppercase tracking-wider text-ink-subtle;
   }
 
   /* Animated underline for inline links */
@@ -1157,6 +1286,13 @@ html.locale-gallifreyan .text-xs {
     transition: none !important;
     transform: none !important;
     opacity: 1 !important;
+  }
+  .hero-portrait:hover .hero-portrait__img {
+    transition: none !important;
+    transform: none !important;
+  }
+  .about-highlight:hover::before {
+    transform: translateX(-50%) !important;
   }
   .blog-post-row:hover .blog-post-row__content {
     transform: none !important;

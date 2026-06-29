@@ -12,7 +12,7 @@ import { formatDate } from '../utils/formatDate'
 
 import { blogPostMark } from '../utils/blogPostMark'
 
-import { applyPageMeta, resetPageMeta } from '../utils/pageMeta'
+import { applyPageMeta, formatPageTitle, resetPageMeta } from '../utils/pageMeta'
 
 import BlogProse from '../components/blog/BlogProse.vue'
 
@@ -50,7 +50,7 @@ const pageMeta = computed(() => {
 
   return {
 
-    title: `${tr(post.value.share.title)} — Ismael Pradas`,
+    title: formatPageTitle(tr(post.value.share.title)),
 
     description: tr(post.value.share.description),
 

@@ -20,8 +20,13 @@ function readSiteName() {
   return site.brand ?? site.name ?? 'Tekkisma'
 }
 
+function formatPageTitle(siteName, page) {
+  return page ? `${siteName} — ${page}` : siteName
+}
+
 function buildMetaBlock(post, siteName) {
-  const title = post.share.title.es
+  const pageTitle = post.share.title.es
+  const title = formatPageTitle(siteName, pageTitle)
   const description = post.share.description.es
   const url = post.share.url
   const image = post.share.image
@@ -67,7 +72,7 @@ function stripSocialMeta(html) {
 }
 
 function injectMeta(template, post, siteName) {
-  const title = `${post.share.title.es} — Ismael Pradas`
+  const title = formatPageTitle(siteName, post.share.title.es)
   const metaBlock = buildMetaBlock(post, siteName)
   const cleaned = stripSocialMeta(template)
 

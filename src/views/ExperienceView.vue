@@ -40,6 +40,7 @@ async function toggleEntry(slug) {
         :index="t('sections.experience.index')"
         :kicker="t('sections.experience.kicker')"
         :title="t('nav.experience')"
+        accent-first
       />
     </RevealBlock>
 

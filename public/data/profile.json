@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": {
-      "es": "Software. Liderazgo. IA driven",
+      "es": "Software. Liderazgo. IA",
       "en": "Software. Leadership. AI driven"
     },
     "headline": {
@@ -26,8 +26,11 @@
     }
   },
   "heroSummary": {
-    "value": "8+",
-    "label": { "es": "años de experiencia", "en": "years of experience" }
+    "value": { "es": "Años de trabajo", "en": "Years of work" },
+    "label": {
+      "es": "diseñando y escalando software",
+      "en": "designing and scaling software"
+    }
   },
   "about": {
     "lead": {
