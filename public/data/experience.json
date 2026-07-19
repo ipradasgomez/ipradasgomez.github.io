@@ -3,8 +3,8 @@
     "slug": "magnific-tech-lead",
     "company": "Magnific (antes Freepik)",
     "role": {
-      "es": "Tech Lead",
-      "en": "Tech Lead"
+      "es": "Lead Backend Engineer",
+      "en": "Lead Backend Engineer"
     },
     "period": {
       "es": "abr. 2026 — actualidad · remoto",
@@ -12,10 +12,60 @@
     },
     "current": true,
     "description": {
-      "es": "Lidero el desarrollo backend de producto, definiendo arquitectura y las prácticas de ingeniería del equipo.",
-      "en": "Leading product backend development, defining architecture and the team's engineering practices."
+      "es": "Lidero el desarrollo backend de producto en **equipos mixtos de backends y frontends**, definiendo arquitectura y las prácticas de ingeniería del equipo.",
+      "en": "Leading product backend development in **mixed backend and frontend teams**, defining architecture and the team's engineering practices."
     },
-    "highlights": [],
+    "highlights": [
+      {
+        "type": "action",
+        "text": {
+          "es": "Lideré al equipo que levantó la **academia**, dotándola de un **sistema de búsqueda optimizado** sobre **Laravel** y un **panel de administración product-ready** para su gestión.",
+          "en": "Led the team that built the **academy**, equipping it with an **optimized search system** on **Laravel** and a **product-ready admin panel** for its management."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Lideré la creación de la **Home Customizable** y colaboré en el desarrollo del **sistema de personalización de página**: un sistema **flexible y escalable de widgets** con el que el usuario personaliza su home, con **latencias por debajo de 100 ms** y **actualizaciones en tiempo real vía SSE** — preparando además la plataforma para su **manejo y personalización por equipos**.",
+          "en": "Led the build of the **Customizable Home** and collaborated on the **page personalization system**: a **flexible, scalable widget system** letting users personalize their home, with **sub-100 ms latencies** and **real-time updates via SSE** — also preparing the platform for **team-level management and personalization**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Definí junto al equipo los **sistemas de personalización de la experiencia de usuario**: usando **IA de forma asíncrona** mediante eventos a través de **Horizon de Laravel**, se precalculaba **contenido optimizado para cada usuario**, mejorando su **retención y participación** en la plataforma.",
+          "en": "Defined with the team the **user experience personalization systems**: using **AI asynchronously** through events via **Laravel Horizon**, content was precomputed and **optimized per user**, improving **retention and engagement** on the platform."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Lidero el equipo responsable de los **flujos de onboarding de usuarios** en la plataforma, colaborando también en la **integración de flujos y suscripciones entre las plataformas del grupo**.",
+          "en": "Leading the team behind the platform's **user onboarding flows**, also collaborating on the **integration of flows and subscriptions across the group's platforms**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Gestión de **bugs y prioridades**, definición de **especificaciones de producto**, **actualización y revisión continua en materia de seguridad**, y **análisis de performance** de cachés y bases de datos.",
+          "en": "Managing **bugs and priorities**, defining **product specifications**, driving **continuous security updates and reviews**, and analyzing the **performance of caches and databases**."
+        }
+      },
+      {
+        "type": "achievement",
+        "text": {
+          "es": "Conseguí aplicar un **x10 en la productividad del equipo** gracias al uso de la **IA**, desarrollando **skills** y **flujos** que aseguraban la **performance de los sistemas**.",
+          "en": "Achieved a **10x boost in team productivity** through **AI**, developing **skills** and **workflows** that safeguarded **system performance**."
+        }
+      },
+      {
+        "type": "achievement",
+        "text": {
+          "es": "Escalé el **contenido dinámico de Magnific** (templates de IA, flujos de onboarding, Academia, banners…) a los **más de 100 idiomas** que se implementaron: un sistema **escalable y dinámico**, cómodo para el **equipo de localización** y **completamente automatizado con IA**.",
+          "en": "Scaled Magnific's **dynamic content** (AI templates, onboarding flows, Academy, banners…) to the **100+ languages** rolled out at the time: a **scalable, dynamic system**, friendly for the **localization team** and **fully automated with AI**."
+        }
+      }
+    ],
     "startDate": "2026-04-01T00:00:00.000Z"
   },
   {
@@ -31,29 +81,85 @@
     },
     "current": false,
     "description": {
-      "es": "Lideré iniciativas backend y migraciones de plataforma, combinando arquitectura, ejecución y mentoring del equipo.",
-      "en": "Led backend initiatives and platform migrations, combining architecture, execution and team mentoring."
+      "es": "Lideré iniciativas backend y migraciones de plataforma en **equipos mixtos de backends y frontends**, combinando arquitectura, ejecución y mentoring del equipo.",
+      "en": "Led backend initiatives and platform migrations in **mixed backend and frontend teams**, combining architecture, execution and team mentoring."
     },
     "highlights": [
       {
         "type": "action",
         "text": {
-          "es": "Definí la arquitectura de servicios core y los estándares de revisión y despliegue del equipo backend.",
-          "en": "Defined core service architecture and backend review and deployment standards for the team."
+          "es": "Extendí el **core de CodeIgniter** para soportar **OAuth2**, integrando **autenticación social y nativa** y una gestión moderna de sesiones y registros sobre la plataforma legacy.",
+          "en": "Extended the **CodeIgniter core** to support **OAuth2**, integrating **social and native authentication** and modern session and sign-up management on top of the legacy platform."
         }
       },
       {
         "type": "action",
         "text": {
-          "es": "Mentoría técnica y acompañamiento en migraciones de plataforma legacy.",
-          "en": "Technical mentoring and hands-on support during legacy platform migrations."
+          "es": "Evolucioné el **sistema de suscripciones** sobre **Chargebee** (pagos con **Stripe** y **PayPal**): lo escalé a **nuevos tipos de producto** y participé en las **decisiones de arquitectura de la nueva API**, modelando el **dominio del catálogo** de forma escalable y global —con **flexibilidad de precios** por mercado— y definiendo los **flujos de upgrade y de compra**. Todo construido con **DDD** y **arquitectura hexagonal**, con tests de **dominio, integración y mutación** y un **100% de cobertura mantenida en el tiempo**.",
+          "en": "Evolved the **subscription system** on **Chargebee** (payments via **Stripe** and **PayPal**): scaled it to **new product types** and took part in the **architectural decisions of the new API**, modeling the **catalog domain** to be scalable and globally applicable —with **market-level price flexibility**— and defining the **upgrade and purchase flows**. All built with strong **DDD** and **hexagonal architecture**, backed by **domain, integration and mutation tests** with **100% coverage sustained over time**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Me formé en **liderazgo (programa ESIC adaptado para Freepik)** y pasé de **co-liderar** el equipo de usuarios y suscripciones a **liderar** el equipo que creó la **nueva API de gestión de usuario**, migrando la funcionalidad del antiguo sistema de perfil a un stack **moderno, ligero y escalable en Slim**, con **arquitectura hexagonal y cobertura de código** desde el primer día. A día de hoy esta API soporta el **grueso del tráfico del sitio**, gestionando la **validación de sesiones** del usuario, la **actualización de sus stats** y el **control de sus suscripciones**.",
+          "en": "Trained in **leadership (ESIC program tailored for Freepik)** and moved from **co-leading** the users and subscriptions team to **leading** the team that built the **new user management API**, migrating the legacy profile system's functionality to a **modern, lightweight and scalable Slim stack**, with **hexagonal architecture and code coverage** from day one. Today this API handles the **bulk of the site's traffic**, managing user **session validation**, **stats updates** and **subscription control**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Sobre esta API definimos después el **germen del sistema de gestión de creaciones del usuario**, así como un **sistema de archivos en la nube** donde el usuario organiza sus proyectos en **carpetas y ficheros**: un sistema **flexible y escalable**, integrable con **distintos sistemas de almacenamiento**.",
+          "en": "On top of this API we later laid the **groundwork for the user creations management system**, along with a **cloud file system** where users organize their projects in **folders and files**: a **flexible, scalable** design that integrates with **different storage systems**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Lideré la **evolución funcional de las suscripciones** — incluidos los sistemas de **pausa y reanudación** — y la **migración del frontal de perfil** al nuevo stack **React** de la compañía, **deprecando el antiguo CodeIgniter**.",
+          "en": "Led the **functional growth of subscriptions** — including the **pause and resume** systems — and the **migration of the profile frontend** to the company's new **React** stack, **deprecating the legacy CodeIgniter**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Lideré **equipos de 2 a 6 personas** en una etapa orientada a la **retención y onboarding del usuario**: sistemas **event-driven** para la **consecución de retos**, gestión de las **homes principales** —optimizándolas para **experiencia, tráfico y posicionamiento**— y la adaptación transversal de un **sistema de banners y campañas** para producto.",
+          "en": "Led **teams of 2 to 6 people** through a stage focused on **user retention and onboarding**: **event-driven** systems for **challenge completion**, ownership of the **main home pages** —optimized for **experience, traffic and search positioning**— and the cross-team adaptation of a **banners and campaigns system** for product."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Definí la arquitectura de servicios core y los estándares de revisión y despliegue del equipo backend, implementando **cobertura de tests** y **analizadores estáticos de código** que aumentaron la **fiabilidad y calidad del código** y **redujeron los errores en producción**.",
+          "en": "Defined core service architecture and backend review and deployment standards for the team, implementing **test coverage** and **static code analyzers** that increased **code reliability and quality** and **reduced production errors**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "**Mentoría y onboarding** de las nuevas incorporaciones al equipo, acompañándolas y guiándolas hasta alcanzar plena autonomía.",
+          "en": "**Mentored and onboarded** new team members, guiding and supporting them until they reached full autonomy."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Gestión de **bugs y prioridades**, definición de **especificaciones de producto**, **actualización y revisión continua en materia de seguridad**, y **análisis de performance** de cachés y bases de datos.",
+          "en": "Managed **bugs and priorities**, defined **product specifications**, drove **continuous security updates and reviews**, and analyzed the **performance of caches and databases**."
         }
       },
       {
         "type": "achievement",
         "text": {
-          "es": "Reducción medible de tiempos en pipelines críticos y deuda técnica en módulos de alto tráfico.",
-          "en": "Measurable cuts to critical pipeline runtimes and technical debt in high-traffic modules."
+          "es": "Diseñé y lideré la **migración de las suscripciones activas** a la nueva plataforma, analizando cada casuística: **100% de las suscripciones compatibles migradas sin pérdidas**, de forma escalonada y dinámica, **sin interrumpir la plataforma** y con ambos sistemas de suscripción funcionando **en paralelo** durante la migración.",
+          "en": "Designed and led the **migration of active subscriptions** to the new platform, analyzing every edge case: **100% of compatible subscriptions migrated with zero loss**, rolled out gradually and dynamically, **without disrupting the platform**, with both subscription systems running **in parallel** throughout the migration."
+        }
+      },
+      {
+        "type": "achievement",
+        "text": {
+          "es": "Optimicé el **área de perfil de usuario**: **latencias por debajo de 100 ms** en los endpoints sin dependencias de terceros, **escalado de su base de datos** e **integraciones con otros servicios de la compañía** para mejorar la experiencia de usuario y la gestión del producto, convirtiendo además el proyecto en **multi-tenant** para servir a la vez a **Freepik, Flaticon, Slidesgo y Videvo**.",
+          "en": "Optimized the **user profile area**: **sub-100 ms latencies** on endpoints without third-party dependencies, **database scaling**, and **integrations with other company services** to improve user experience and product management, also making the project **multi-tenant** to serve **Freepik, Flaticon, Slidesgo and Videvo** at once."
         }
       }
     ],
@@ -72,10 +178,32 @@
     },
     "current": false,
     "description": {
-      "es": "Reduje el pipeline de precios de más de 1h a menos de 5 minutos.",
-      "en": "Cut the pricing pipeline from over 1h to under 5 minutes."
+      "es": "Entré en **prácticas** tras el **Grado Superior de DAW** y me contrataron como Backend Developer: modernicé la plataforma y rehíce la aplicación de precios, reduciendo el cálculo de todo el catálogo de más de 1h a menos de 2 minutos.",
+      "en": "Joined as a **trainee** after my **higher vocational degree in web development (DAW)** and was hired as a Backend Developer: modernized the platform and rebuilt the pricing application, cutting full-catalog price calculation from over 1h to under 2 minutes."
     },
-    "highlights": [],
+    "highlights": [
+      {
+        "type": "action",
+        "text": {
+          "es": "Lideré la **modernización técnica** de la plataforma: migración del framework de **CodeIgniter 3 a CodeIgniter 4**, **simplificación de la base de datos** (menos tablas y carga) e introducción de **programación orientada a objetos** en un código legacy que no la usaba.",
+          "en": "Drove the **technical modernization** of the platform: framework migration from **CodeIgniter 3 to CodeIgniter 4**, **database simplification** (fewer tables and less load), and introducing **object-oriented programming** into a legacy codebase that lacked it."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Implementé la **calculadora de tasación de joyería** y optimicé y actualicé la **lógica de cálculo de precios** del resto del catálogo, en contacto directo con los equipos de gestión del producto.",
+          "en": "Built the **jewelry appraisal calculator** and optimized and updated the **pricing calculation logic** for the rest of the catalog, working directly with the product management teams."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Rehíce la **aplicación de precios** (funcionalidad y rendimiento) y su **integración con Salesforce**, dividiendo por **más de 30 el tiempo de recálculo de precios** del catálogo completo: de **más de 1 hora a menos de 2 minutos** con un volumen creciente de productos. Esto permitió **actualizar los precios del catálogo mucho más rápido** y redujo el **coste de funcionamiento** de la plataforma.",
+          "en": "Rebuilt the **pricing application** (functionality and performance) and its **Salesforce integration**, dividing full-catalog **price recalculation time by more than 30**: from **over 1 hour to under 2 minutes** with a growing product volume. This enabled much **faster catalog price updates** and cut the platform's **running cost**."
+        }
+      }
+    ],
     "startDate": "2019-06-01T00:00:00.000Z"
   }
 ]

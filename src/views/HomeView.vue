@@ -106,6 +106,12 @@ const { t, tr } = useLocale()
                   >@{{ profile.person.github.handle }}</a
                 >
               </p>
+              <p
+                v-if="profile.languages"
+                class="mt-2 font-mono text-xs text-ink-subtle"
+              >
+                {{ profile.languages.items.map((lang) => tr(lang)).join(' · ') }}
+              </p>
             </div>
           </div>
         </RevealBlock>

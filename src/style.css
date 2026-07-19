@@ -315,7 +315,7 @@ body {
 
   /* Stack — column rhythm with a faint leading rule, not cards */
   .about-stack {
-    @apply grid gap-x-10 gap-y-9 sm:grid-cols-3;
+    @apply grid gap-x-10 gap-y-9 sm:grid-cols-2 lg:grid-cols-3;
   }
 
   .about-stack__group {
