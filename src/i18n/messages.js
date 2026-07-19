@@ -27,7 +27,7 @@ export const messages = {
       blog: { index: '04', kicker: 'Escritos' },
       contact: { index: '05', kicker: 'Escríbeme' },
     },
-    stack: { title: 'Stack técnico' },
+    stack: { title: '¿Con qué trabajo?' },
     experience: { current: 'Actual', expand: 'Ver más', collapse: 'Recoger', type_action: 'Acciones', type_achievement: 'Logros' },
     blog: {
       empty_title: 'Próximamente',
@@ -46,7 +46,7 @@ export const messages = {
       social: 'En redes',
     },
     footer: {
-      tagline: 'Tech Lead y Backend Engineer.',
+      tagline: 'Lead Backend Engineer.',
       built: 'Hecho por mí. Obviamente. Usando IA. También obviamente.',
       rights: 'Todos los derechos reservados.',
     },
@@ -79,7 +79,7 @@ export const messages = {
       blog: { index: '04', kicker: 'Writing' },
       contact: { index: '05', kicker: 'Say hello' },
     },
-    stack: { title: 'Tech stack' },
+    stack: { title: 'What do I work with?' },
     experience: {
       current: 'Current',
       expand: 'Read more',
@@ -104,7 +104,7 @@ export const messages = {
       social: 'On socials',
     },
     footer: {
-      tagline: 'Tech Lead and Backend Engineer.',
+      tagline: 'Lead Backend Engineer.',
       built: 'Built by me. Obviously. Using AI. Also Obviously.',
       rights: 'All rights reserved.',
     },

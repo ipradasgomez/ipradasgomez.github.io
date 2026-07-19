@@ -60,6 +60,13 @@ const { t, tr } = useLocale()
             <Tag v-for="item in group.items" :key="item">{{ item }}</Tag>
           </div>
         </div>
+
+        <div v-if="profile.ai" class="about-stack__group">
+          <p class="about-stack__label">{{ tr(profile.ai.title) }}</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <Tag v-for="item in profile.ai.items" :key="tr(item)">{{ tr(item) }}</Tag>
+          </div>
+        </div>
       </div>
     </RevealBlock>
   </section>

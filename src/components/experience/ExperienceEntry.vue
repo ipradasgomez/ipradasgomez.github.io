@@ -26,6 +26,15 @@ function typeLabel(type) {
   return type === 'achievement' ? t('experience.type_achievement') : t('experience.type_action')
 }
 
+// Escape HTML, then allow **bold** emphasis only.
+function formatHighlight(text) {
+  return String(text ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-ink">$1</strong>')
+}
+
 function onToggle() {
   emit('toggle')
 }
@@ -51,9 +60,11 @@ function onToggle() {
       <p class="mt-1 text-sm font-medium text-accent-soft">{{ item.company }}</p>
       <p class="mt-1 font-mono text-xs text-ink-subtle">{{ tr(item.period) }}</p>
 
-      <p v-if="tr(item.description)" class="mt-3 max-w-prose text-sm leading-relaxed text-ink-muted">
-        {{ tr(item.description) }}
-      </p>
+      <p
+        v-if="tr(item.description)"
+        class="mt-3 max-w-prose text-sm leading-relaxed text-ink-muted"
+        v-html="formatHighlight(tr(item.description))"
+      />
 
       <button
         v-if="hasDetails"
@@ -104,9 +115,11 @@ function onToggle() {
             <p class="text-meta">{{ typeLabel(type) }}</p>
             <div class="accent-rule--sm mt-3" aria-hidden="true" />
             <ul class="experience-entry__list">
-              <li v-for="(entry, idx) in groupedHighlights[type]" :key="idx">
-                {{ tr(entry.text) }}
-              </li>
+              <li
+                v-for="(entry, idx) in groupedHighlights[type]"
+                :key="idx"
+                v-html="formatHighlight(tr(entry.text))"
+              />
             </ul>
           </div>
         </template>

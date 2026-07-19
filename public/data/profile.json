@@ -2,8 +2,8 @@
   "person": {
     "name": "Ismael Pradas",
     "role": {
-      "es": "Tech Lead · Backend Engineer",
-      "en": "Tech Lead · Backend Engineer"
+      "es": "Lead Backend Engineer",
+      "en": "Lead Backend Engineer"
     },
     "avatar": "https://avatars.githubusercontent.com/u/45384098?v=4",
     "location": { "es": "Málaga, España", "en": "Málaga, Spain" },
@@ -21,12 +21,12 @@
       "en": "I turn technical complexity into platforms and teams that scale."
     },
     "intro": {
-      "es": "Tech Lead y Backend Engineer. Diseño sistemas robustos, lidero migraciones y aplico IA con criterio de ingeniería para que el equipo avance más rápido sin perder calidad.",
-      "en": "Tech Lead and Backend Engineer. I design robust systems, lead migrations and apply AI with engineering judgement so the team moves faster without losing quality."
+      "es": "Lead Backend Engineer con 8+ años construyendo sistemas de alto tráfico (~100M visitas/mes). Diseño arquitectura, lidero equipo sin soltar el código y aplico IA con criterio de ingeniería para avanzar más rápido sin perder calidad.",
+      "en": "Lead Backend Engineer with 8+ years building high-traffic systems (~100M visits/month). I design architecture, lead the team without leaving the code behind, and apply AI with engineering judgement to move faster without losing quality."
     }
   },
   "heroSummary": {
-    "value": { "es": "Años de trabajo", "en": "Years of work" },
+    "value": { "es": "8+ años", "en": "8+ years" },
     "label": {
       "es": "diseñando y escalando software",
       "en": "designing and scaling software"
@@ -34,57 +34,64 @@
   },
   "about": {
     "lead": {
-      "es": "Ingeniería clásica con mentalidad de producto y foco en impacto.",
-      "en": "Classic engineering with a product mindset and a focus on impact."
+      "es": "Ingeniería clásica con mentalidad de producto, ahora potenciada por IA y automatizaciones.",
+      "en": "Classic engineering with a product mindset, now supercharged by AI and automation."
     },
     "paragraphs": {
       "es": [
-        "Soy Ismael Pradas, Tech Lead y Backend Engineer afincado en Málaga. He construido y evolucionado sistemas core de negocio, modernizado plataformas legacy y optimizado pipelines críticos para reducir tiempos y costes de forma medible.",
-        "Trabajo donde se cruzan arquitectura, ejecución y liderazgo técnico: alineo equipo, calidad y entrega para que producto y tecnología avancen juntos. Uso la IA como multiplicador de productividad, siempre con juicio ingenieril como base."
+        "Soy Isma, Lead Backend Engineer afincado en Málaga. Llevo 8+ años en backend, creciendo hasta un rol hands-on de liderazgo: diseño de arquitectura, liderazgo de equipo y trabajo cercano con Producto y Diseño — sin dejar el código de lado. He trabajado en sistemas de alto tráfico (~100M visitas/mes) y en el día a día aplico DDD, SOLID, arquitectura hexagonal / por capas, eventos de dominio y APIs pensadas para durar.",
+        "Con la IA he podido llegar a áreas que antes quedaban más lejos — DevOps, producto, análisis de datos, testing — y recorrer más rápido el ciclo de una feature. Ahora exploro la automatización de flujos con agentes, MCP e integraciones de modelos: los uso como acelerador — vibe coding con respaldo de ingeniería: criterio hands-on, conocer el stack y sus internals, para que el crecimiento sea sólido."
       ],
       "en": [
-        "I'm Ismael Pradas, a Tech Lead and Backend Engineer based in Málaga, Spain. I've built and evolved core business systems, modernized legacy platforms and optimized critical pipelines to cut time and cost in measurable ways.",
-        "I work where architecture, execution and technical leadership meet: aligning team, quality and delivery so product and engineering move together. I use AI as a productivity multiplier, always grounded in engineering judgement."
+        "I'm Isma, a Lead Backend Engineer based in Málaga, Spain. I've spent 8+ years in backend, growing into a hands-on lead role: architecture design, team leadership, and close work with Product and Design — without leaving the code behind. I've worked on high-traffic systems (~100M visits/month) and day to day I apply DDD, SOLID, hexagonal / layered architecture, domain events, and APIs built to last.",
+        "With AI, I've been able to reach into areas that used to feel farther away — DevOps, product, data analysis, testing — and move faster through a feature cycle. I'm now exploring workflow automation with agents, MCP, and model integrations: I use them as an accelerator — engineering-backed vibe coding: hands-on judgment, knowing the stack and the internals, so growth stays solid."
       ]
     },
     "highlights": [
       {
         "title": { "es": "Liderazgo técnico", "en": "Technical leadership" },
         "description": {
-          "es": "Alineo equipo, calidad y entrega para que producto y tecnología avancen juntos.",
-          "en": "I align team, quality and delivery so product and engineering advance together."
+          "es": "Lidero equipo y trabajo cerca de Producto y Diseño, sin dejar el código de lado.",
+          "en": "I lead the team and work closely with Product and Design, without leaving the code behind."
+        }
+      },
+      {
+        "title": { "es": "Arquitectura que dura", "en": "Architecture built to last" },
+        "description": {
+          "es": "DDD, SOLID, arquitectura hexagonal / por capas, eventos de dominio y APIs pensadas para durar.",
+          "en": "DDD, SOLID, hexagonal / layered architecture, domain events, and APIs built to last."
         }
       },
       {
         "title": { "es": "IA con criterio", "en": "AI with judgement" },
         "description": {
-          "es": "Uso la IA como multiplicador de productividad, con criterio de ingeniería como base.",
-          "en": "I use AI as a productivity multiplier, grounded in engineering judgement."
-        }
-      },
-      {
-        "title": { "es": "Arquitectura escalable", "en": "Scalable architecture" },
-        "description": {
-          "es": "Diseño sistemas robustos pensados para crecer sin acumular deuda innecesaria.",
-          "en": "I design robust systems meant to grow without piling on needless debt."
+          "es": "Agentes, MCP e integraciones de modelos como acelerador, con juicio de ingeniería como base.",
+          "en": "Agents, MCP and model integrations as an accelerator, grounded in engineering judgement."
         }
       }
     ]
   },
   "stack": [
     {
-      "group": { "es": "Lenguajes & Frameworks", "en": "Languages & Frameworks" },
-      "items": ["PHP", "Laravel", "Filament", "Vue", "Tailwind CSS"]
+      "group": { "es": "Lenguajes, frameworks & almacenamiento", "en": "Languages, frameworks & storage" },
+      "items": ["PHP", "Slim", "Laravel", "Python", "Django", "TypeScript", "JavaScript", "Vue", "React", "Next.js", "Tailwind CSS", "Vite", "MySQL", "MariaDB", "PostgreSQL", "Elasticsearch", "Redis", "Memcached"]
     },
     {
-      "group": { "es": "Bases de datos", "en": "Databases" },
-      "items": ["PostgreSQL", "MySQL", "MongoDB"]
-    },
-    {
-      "group": { "es": "Herramientas", "en": "Tooling" },
-      "items": ["Docker", "Git", "CI/CD"]
+      "group": { "es": "IDEs, herramientas & despliegue", "en": "IDEs, tooling & delivery" },
+      "items": ["PhpStorm", "VS Code", "PHPUnit", "Pest", "Infection", "Git", "Bitbucket", "Docker", "Kubernetes", "GCP", "Pub/Sub", "Nginx", "GitHub Actions", "Tekton", "Bash", "Linux"]
     }
   ],
+  "ai": {
+    "title": { "es": "IA en el día a día", "en": "AI day to day" },
+    "items": ["Claude", "ChatGPT", "Cursor", "Vertex AI", "Agents", "MCP", "OpenRouter", { "es": "Automatizaciones", "en": "Automation" }]
+  },
+  "languages": {
+    "title": { "es": "Idiomas", "en": "Languages" },
+    "items": [
+      { "es": "Español — nativo", "en": "Spanish — native" },
+      { "es": "Inglés — profesional", "en": "English — professional working" }
+    ]
+  },
   "contact": {
     "lead": {
       "es": "¿Tienes un reto técnico, una oportunidad o simplemente quieres saludar? Mi bandeja siempre está abierta.",
