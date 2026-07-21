@@ -1,10 +1,13 @@
 [
   {
     "slug": "magnific-tech-lead",
-    "company": "Magnific (antes Freepik)",
+    "company": {
+      "es": "Magnific (antes Freepik Company)",
+      "en": "Magnific (formerly Freepik Company)"
+    },
     "role": {
-      "es": "Tech Lead",
-      "en": "Tech Lead"
+      "es": "Lead Backend Engineer / Tech Lead",
+      "en": "Lead Backend Engineer / Tech Lead"
     },
     "period": {
       "es": "abr. 2026 — actualidad · remoto",
@@ -12,10 +15,60 @@
     },
     "current": true,
     "description": {
-      "es": "Lidero el desarrollo backend de producto, definiendo arquitectura y las prácticas de ingeniería del equipo.",
-      "en": "Leading product backend development, defining architecture and the team's engineering practices."
+      "es": "Liderazgo técnico de **equipos multidisciplinares de hasta 10 ingenieros**: arquitectura, mentoring, ceremonias, code reviews y planning, hands-on en **React/Vue** y **PHP (Slim/Laravel)**.",
+      "en": "Technical leadership of **cross-functional teams of up to 10 engineers**: architecture, mentoring, ceremonies, code reviews and planning, hands-on with **React/Vue** and **PHP (Slim/Laravel)**."
     },
-    "highlights": [],
+    "highlights": [
+      {
+        "type": "action",
+        "text": {
+          "es": "Impulsé con el equipo backends con **DDD**, **hexagonal** y principios **YAGNI / DRY / SOLID / PSR**, comunicación event-driven (**SSE**, **Pub/Sub**, **Redis Streams**), **gRPC** interno y **CI/CD** sobre **Docker / GCP**, con **>90% de cobertura** de tests.",
+          "en": "Drove with the team backends built on **DDD**, **hexagonal** and **YAGNI / DRY / SOLID / PSR**, event-driven communication (**SSE**, **Pub/Sub**, **Redis Streams**), internal **gRPC** and **CI/CD** on **Docker / GCP**, with **>90% test coverage**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Lideré la entrega de plataformas clave — **Payments**, **Learning Academy** (búsqueda optimizada en **Laravel** y panel de administración product-ready), **Cloud Files** y **homepage personalizable** (widgets flexibles, latencias **sub-100 ms**, actualizaciones en tiempo real vía **SSE**) — con **+3M requests/día**, latencias **sub-300 ms** y soporte a **+100 idiomas**.",
+          "en": "Led delivery of key platforms — **Payments**, **Learning Academy** (optimized search on **Laravel** and a product-ready admin panel), **Cloud Files** and a **customizable homepage** (flexible widgets, **sub-100 ms** latencies, real-time updates via **SSE**) — serving **3M+ requests/day**, **sub-300 ms** latencies and **100+ languages**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Definí con el equipo sistemas de **personalización de la experiencia** usando IA de forma asíncrona (eventos vía **Laravel Horizon**) para precalcular contenido por usuario, mejorando retención y engagement.",
+          "en": "Defined with the team **UX personalization** systems using AI asynchronously (events via **Laravel Horizon**) to precompute per-user content, improving retention and engagement."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Coordinación con **UX**, **Product**, **SEO**, **SRE** y **Security** para definir especificaciones y alinear entrega; también gestión de prioridades, revisiones de seguridad y análisis de performance de cachés y bases de datos.",
+          "en": "Coordination with **UX**, **Product**, **SEO**, **SRE** and **Security** to define specs and align delivery; also priorities, security reviews and cache/database performance analysis."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Aceleré la entrega del equipo de **semanas a días** con AI-assisted development, validación y automatización (**Claude**, **Cursor**) y **skills** propias que mantienen la calidad del código.",
+          "en": "Accelerated the team's delivery from **weeks to days** with AI-assisted development, validation and automation (**Claude**, **Cursor**) and custom **skills** that safeguard code quality."
+        }
+      },
+      {
+        "type": "achievement",
+        "text": {
+          "es": "Lideré los flujos de onboarding del **Magnific Relaunch** e integración de flujos/suscripciones entre plataformas del grupo: **~30% de migración de suscripciones** e impacto en **+3M usuarios**.",
+          "en": "Led onboarding flows for the **Magnific Relaunch** and integration of flows/subscriptions across the group's platforms: **~30% subscription migration rate** and **3M+ users** impacted."
+        }
+      },
+      {
+        "type": "achievement",
+        "text": {
+          "es": "Escalamos el contenido dinámico de Magnific (templates de IA, onboarding, Academia, banners…) a **+100 idiomas** con un sistema escalable, cómodo para localización y automatizado con IA.",
+          "en": "Scaled Magnific's dynamic content (AI templates, onboarding, Academy, banners…) to **100+ languages** with a scalable system, localization-friendly and automated with AI."
+        }
+      }
+    ],
     "startDate": "2026-04-01T00:00:00.000Z"
   },
   {
@@ -31,29 +84,64 @@
     },
     "current": false,
     "description": {
-      "es": "Lideré iniciativas backend y migraciones de plataforma, combinando arquitectura, ejecución y mentoring del equipo.",
-      "en": "Led backend initiatives and platform migrations, combining architecture, execution and team mentoring."
+      "es": "De backend a liderazgo técnico en **equipos mixtos** de backends y frontends: arquitectura, migraciones de plataforma, mentoring y entrega en sistemas de alto tráfico.",
+      "en": "From backend to technical leadership in **mixed** backend and frontend teams: architecture, platform migrations, mentoring and delivery on high-traffic systems."
     },
     "highlights": [
       {
         "type": "action",
         "text": {
-          "es": "Definí la arquitectura de servicios core y los estándares de revisión y despliegue del equipo backend.",
-          "en": "Defined core service architecture and backend review and deployment standards for the team."
+          "es": "Extendí el core de **CodeIgniter** para soportar **OAuth2**, integrando autenticación social y nativa y una gestión moderna de sesiones sobre la plataforma legacy.",
+          "en": "Extended the **CodeIgniter** core to support **OAuth2**, integrating social and native authentication and modern session management on the legacy platform."
         }
       },
       {
         "type": "action",
         "text": {
-          "es": "Mentoría técnica y acompañamiento en migraciones de plataforma legacy.",
-          "en": "Technical mentoring and hands-on support during legacy platform migrations."
+          "es": "Evolucioné el **sistema de suscripciones** (Chargebee / Stripe / PayPal): nuevos tipos de producto, catálogo global con flexibilidad de precios por mercado y flujos de upgrade/compra, con **DDD**, **arquitectura hexagonal** y tests de dominio, integración y mutación.",
+          "en": "Evolved the **subscription system** (Chargebee / Stripe / PayPal): new product types, a global catalog with market-level pricing and upgrade/purchase flows, with **DDD**, **hexagonal architecture** and domain, integration and mutation tests."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Pasé de co-liderar usuarios/suscripciones a liderar la **nueva API de usuario** en **Slim** (hexagonal, cobertura desde el día uno): sesiones, stats y suscripciones; base del **Cloud Files** y de la gestión de creaciones del usuario.",
+          "en": "Moved from co-leading users/subscriptions to leading the **new user management API** on **Slim** (hexagonal, coverage from day one): sessions, stats and subscriptions; foundation for **Cloud Files** and user creations management."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Lideré la evolución funcional de suscripciones (incl. **pausa y reanudación**) y la migración del frontal de perfil a **React**, deprecando el legado **CodeIgniter**.",
+          "en": "Led functional growth of subscriptions (including **pause and resume**) and migrating the profile frontend to **React**, deprecating legacy **CodeIgniter**."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Lideré equipos orientados a **retención y onboarding**: sistemas event-driven (retos), homes de producto optimizadas para experiencia, tráfico y SEO, y un sistema transversal de banners y campañas.",
+          "en": "Led teams focused on **retention and onboarding**: event-driven challenge systems, product homes optimized for experience, traffic and SEO, and a cross-cutting banners and campaigns system."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Definí con el equipo estándares de arquitectura, review y despliegue; **cobertura de tests** y **analizadores estáticos**; **mentoría y onboarding** de nuevas incorporaciones hasta plena autonomía.",
+          "en": "Defined with the team architecture, review and deployment standards; **test coverage** and **static analyzers**; **mentored and onboarded** new hires through to full autonomy."
         }
       },
       {
         "type": "achievement",
         "text": {
-          "es": "Reducción medible de tiempos en pipelines críticos y deuda técnica en módulos de alto tráfico.",
-          "en": "Measurable cuts to critical pipeline runtimes and technical debt in high-traffic modules."
+          "es": "Diseñé y lideré la migración de **+600K suscripciones** desde gateways legacy al nuevo payments gateway: **cero downtime** y **cero pérdidas**, con ambos sistemas en paralelo durante la migración.",
+          "en": "Designed and led the migration of **600K+ subscriptions** from legacy payment gateways to the new payments gateway: **zero downtime** and **zero losses**, with both systems running in parallel throughout the migration."
+        }
+      },
+      {
+        "type": "achievement",
+        "text": {
+          "es": "Optimicé con el equipo el **área de perfil**: latencias **sub-100 ms** en endpoints sin dependencias de terceros, escalado de BD e integraciones con otros servicios; proyecto **multi-tenant** (Freepik, Flaticon, Slidesgo, Videvo).",
+          "en": "Optimized with the team the **user profile area**: **sub-100 ms** latencies on endpoints without third-party deps, DB scaling and integrations with other company services; **multi-tenant** project (Freepik, Flaticon, Slidesgo, Videvo)."
         }
       }
     ],
@@ -61,7 +149,10 @@
   },
   {
     "slug": "cash-converters-backend",
-    "company": "Cash Converters España",
+    "company": {
+      "es": "Cash Converters España",
+      "en": "Cash Converters Spain"
+    },
     "role": {
       "es": "Backend Developer",
       "en": "Backend Developer"
@@ -72,10 +163,32 @@
     },
     "current": false,
     "description": {
-      "es": "Reduje el pipeline de precios de más de 1h a menos de 5 minutos.",
-      "en": "Cut the pricing pipeline from over 1h to under 5 minutes."
+      "es": "Reconstruí el motor de precios y modernicé el core (**CodeIgniter**): de **+1 hora** a **menos de 2 minutos** en el catálogo completo (**>30×** más rápido), con hasta **~70% menos coste** de infraestructura.",
+      "en": "Rebuilt the pricing engine and upgraded the core framework (**CodeIgniter**): from **over 1 hour** to **under 2 minutes** for the full catalog (**>30×** faster), cutting infrastructure cost by up to **~70%**."
     },
-    "highlights": [],
+    "highlights": [
+      {
+        "type": "action",
+        "text": {
+          "es": "Impulsé la modernización técnica: migración de **CodeIgniter 3 a 4**, simplificación de la base de datos e introducción de **OOP** en un código legacy que no la usaba.",
+          "en": "Drove the technical modernization: migration from **CodeIgniter 3 to 4**, database simplification and introducing **OOP** into a legacy codebase that lacked it."
+        }
+      },
+      {
+        "type": "action",
+        "text": {
+          "es": "Desarrollé el **algoritmo de tasación de joyería** y la sincronización de catálogo y precios con **Minderest** y **Salesforce**.",
+          "en": "Built the **jewelry appraisal algorithm** and catalog/price sync through **Minderest** and **Salesforce**."
+        }
+      },
+      {
+        "type": "achievement",
+        "text": {
+          "es": "Rehíce la aplicación de precios (funcionalidad y rendimiento) y su integración con **Salesforce**: el recálculo del catálogo completo pasó de **+1 hora** a **menos de 2 minutos** (**>30×**), permitiendo actualizar precios mucho más rápido y reducir el coste de operación.",
+          "en": "Rebuilt the pricing application (functionality and performance) and its **Salesforce** integration: full-catalog recalculation went from **over 1 hour** to **under 2 minutes** (**>30×**), enabling much faster price updates and lower operating cost."
+        }
+      }
+    ],
     "startDate": "2019-06-01T00:00:00.000Z"
   }
 ]

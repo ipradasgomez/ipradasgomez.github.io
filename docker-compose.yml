@@ -6,7 +6,8 @@ services:
       - .:/app
       - node_modules:/app/node_modules
     ports:
-      - "5173:5173"
+      # TEMP: host 5174 (5173 ocupado). Revertir a "5173:5173" cuando liberes el puerto.
+      - "5174:5173"
       - "4001:4001"
     env_file:
       - path: .env
