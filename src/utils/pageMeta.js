@@ -3,7 +3,7 @@ const SITE_NAME = 'Tekkisma'
 const DEFAULT = {
   title: SITE_NAME,
   description:
-    'Lead Backend Engineer. Escalo plataformas y equipos para convertir complejidad técnica en resultados de negocio.',
+    'Lead Backend Engineer. Escalo plataformas de alto tráfico y equipos para convertir complejidad técnica en resultados de negocio.',
   canonical: 'https://tekkisma.es/',
   siteName: SITE_NAME,
   type: 'website',
