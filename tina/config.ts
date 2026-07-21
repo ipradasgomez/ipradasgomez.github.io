@@ -180,8 +180,14 @@ export default defineConfig({
           {
             type: 'string',
             name: 'company',
-            label: 'Empresa',
+            label: 'Empresa (ES)',
             required: true,
+          },
+          {
+            type: 'string',
+            name: 'companyEn',
+            label: 'Company (EN)',
+            description: 'Opcional. Si se omite, se usa el nombre en ES también en inglés.',
           },
           {
             type: 'string',

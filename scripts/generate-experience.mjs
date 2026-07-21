@@ -29,7 +29,9 @@ const experience = listMarkdownFiles(experienceDir)
 
     return {
       slug,
-      company: data.company ?? '',
+      company: data.companyEn
+        ? { es: data.company ?? '', en: data.companyEn }
+        : (data.company ?? ''),
       published: data.published === true,
       role: {
         es: data.role ?? slug,

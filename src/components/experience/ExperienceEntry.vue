@@ -57,7 +57,7 @@ function onToggle() {
         </span>
       </div>
 
-      <p class="mt-1 text-sm font-medium text-accent-soft">{{ item.company }}</p>
+      <p class="mt-1 text-sm font-medium text-accent-soft">{{ tr(item.company) }}</p>
       <p class="mt-1 font-mono text-xs text-ink-subtle">{{ tr(item.period) }}</p>
 
       <p

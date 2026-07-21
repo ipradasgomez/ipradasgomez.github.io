@@ -9,152 +9,90 @@ current: false
 period: ago. 2020 — abr. 2026
 periodEn: Aug 2020 — Apr 2026
 description: >-
-  Lideré iniciativas backend y migraciones de plataforma en **equipos mixtos
-  de backends y frontends**, combinando arquitectura, ejecución y mentoring
-  del equipo.
+  De backend a liderazgo técnico en **equipos mixtos** de backends y frontends:
+  arquitectura, migraciones de plataforma, mentoring y entrega en sistemas de
+  alto tráfico.
 descriptionEn: >-
-  Led backend initiatives and platform migrations in **mixed backend and
-  frontend teams**, combining architecture, execution and team mentoring.
+  From backend to technical leadership in **mixed** backend and frontend teams:
+  architecture, platform migrations, mentoring and delivery on high-traffic
+  systems.
 highlights:
   - type: action
     text: >-
-      Extendí el **core de CodeIgniter** para soportar **OAuth2**, integrando
-      **autenticación social y nativa** y una gestión moderna de sesiones y
-      registros sobre la plataforma legacy.
+      Extendí el core de **CodeIgniter** para soportar **OAuth2**, integrando
+      autenticación social y nativa y una gestión moderna de sesiones sobre la
+      plataforma legacy.
     textEn: >-
-      Extended the **CodeIgniter core** to support **OAuth2**, integrating
-      **social and native authentication** and modern session and sign-up
-      management on top of the legacy platform.
+      Extended the **CodeIgniter** core to support **OAuth2**, integrating social
+      and native authentication and modern session management on the legacy
+      platform.
   - type: action
     text: >-
-      Evolucioné el **sistema de suscripciones** sobre **Chargebee** (pagos
-      con **Stripe** y **PayPal**): lo escalé a **nuevos tipos de producto** y
-      participé en las **decisiones de arquitectura de la nueva API**,
-      modelando el **dominio del catálogo** de forma escalable y global —con
-      **flexibilidad de precios** por mercado— y definiendo los **flujos de
-      upgrade y de compra**. Todo construido con **DDD** y **arquitectura
-      hexagonal**, con tests de **dominio, integración y mutación** y un
-      **100% de cobertura mantenida en el tiempo**.
+      Evolucioné el **sistema de suscripciones** (Chargebee / Stripe / PayPal):
+      nuevos tipos de producto, catálogo global con flexibilidad de precios por
+      mercado y flujos de upgrade/compra, con **DDD**, **arquitectura hexagonal**
+      y tests de dominio, integración y mutación.
     textEn: >-
-      Evolved the **subscription system** on **Chargebee** (payments via
-      **Stripe** and **PayPal**): scaled it to **new product types** and took
-      part in the **architectural decisions of the new API**, modeling the
-      **catalog domain** to be scalable and globally applicable —with
-      **market-level price flexibility**— and defining the **upgrade and
-      purchase flows**. All built with strong **DDD** and **hexagonal
-      architecture**, backed by **domain, integration and mutation tests**
-      with **100% coverage sustained over time**.
+      Evolved the **subscription system** (Chargebee / Stripe / PayPal): new
+      product types, a global catalog with market-level pricing and
+      upgrade/purchase flows, with **DDD**, **hexagonal architecture** and
+      domain, integration and mutation tests.
   - type: action
     text: >-
-      Me formé en **liderazgo (programa ESIC adaptado para Freepik)** y pasé
-      de **co-liderar** el equipo de usuarios y suscripciones a **liderar** el
-      equipo que creó la **nueva API de gestión de usuario**, migrando la
-      funcionalidad del antiguo sistema de perfil a un stack **moderno, ligero
-      y escalable en Slim**, con **arquitectura hexagonal y cobertura de
-      código** desde el primer día. A día de hoy esta API soporta el **grueso
-      del tráfico del sitio**, gestionando la **validación de sesiones** del
-      usuario, la **actualización de sus stats** y el **control de sus
-      suscripciones**.
+      Pasé de co-liderar usuarios/suscripciones a liderar la **nueva API de
+      usuario** en **Slim** (hexagonal, cobertura desde el día uno): sesiones,
+      stats y suscripciones; base del **Cloud Files** y de la gestión de
+      creaciones del usuario.
     textEn: >-
-      Trained in **leadership (ESIC program tailored for Freepik)** and moved
-      from **co-leading** the users and subscriptions team to **leading** the
-      team that built the **new user management API**, migrating the legacy
-      profile system's functionality to a **modern, lightweight and scalable
-      Slim stack**, with **hexagonal architecture and code coverage** from day
-      one. Today this API handles the **bulk of the site's traffic**, managing
-      user **session validation**, **stats updates** and **subscription
-      control**.
+      Moved from co-leading users/subscriptions to leading the **new user
+      management API** on **Slim** (hexagonal, coverage from day one): sessions,
+      stats and subscriptions; foundation for **Cloud Files** and user creations
+      management.
   - type: action
     text: >-
-      Sobre esta API definimos después el **germen del sistema de gestión de
-      creaciones del usuario**, así como un **sistema de archivos en la nube**
-      donde el usuario organiza sus proyectos en **carpetas y ficheros**: un
-      sistema **flexible y escalable**, integrable con **distintos sistemas de
-      almacenamiento**.
+      Lideré la evolución funcional de suscripciones (incl. **pausa y
+      reanudación**) y la migración del frontal de perfil a **React**,
+      deprecando el legado **CodeIgniter**.
     textEn: >-
-      On top of this API we later laid the **groundwork for the user creations
-      management system**, along with a **cloud file system** where users
-      organize their projects in **folders and files**: a **flexible,
-      scalable** design that integrates with **different storage systems**.
+      Led functional growth of subscriptions (including **pause and resume**) and
+      migrating the profile frontend to **React**, deprecating legacy
+      **CodeIgniter**.
   - type: action
     text: >-
-      Lideré la **evolución funcional de las suscripciones** — incluidos los
-      sistemas de **pausa y reanudación** — y la **migración del frontal de
-      perfil** al nuevo stack **React** de la compañía, **deprecando el
-      antiguo CodeIgniter**.
+      Lideré equipos orientados a **retención y onboarding**: sistemas
+      event-driven (retos), homes de producto optimizadas para experiencia,
+      tráfico y SEO, y un sistema transversal de banners y campañas.
     textEn: >-
-      Led the **functional growth of subscriptions** — including the **pause
-      and resume** systems — and the **migration of the profile frontend** to
-      the company's new **React** stack, **deprecating the legacy
-      CodeIgniter**.
+      Led teams focused on **retention and onboarding**: event-driven challenge
+      systems, product homes optimized for experience, traffic and SEO, and a
+      cross-cutting banners and campaigns system.
   - type: action
     text: >-
-      Lideré **equipos de 2 a 6 personas** en una etapa orientada a la
-      **retención y onboarding del usuario**: sistemas **event-driven** para
-      la **consecución de retos**, gestión de las **homes principales**
-      —optimizándolas para **experiencia, tráfico y posicionamiento**— y la
-      adaptación transversal de un **sistema de banners y campañas** para
-      producto.
+      Definí con el equipo estándares de arquitectura, review y despliegue;
+      **cobertura de tests** y **analizadores estáticos**; **mentoría y
+      onboarding** de nuevas incorporaciones hasta plena autonomía.
     textEn: >-
-      Led **teams of 2 to 6 people** through a stage focused on **user
-      retention and onboarding**: **event-driven** systems for **challenge
-      completion**, ownership of the **main home pages** —optimized for
-      **experience, traffic and search positioning**— and the cross-team
-      adaptation of a **banners and campaigns system** for product.
-  - type: action
-    text: >-
-      Definí la arquitectura de servicios core y los estándares de revisión y
-      despliegue del equipo backend, implementando **cobertura de tests** y
-      **analizadores estáticos de código** que aumentaron la **fiabilidad y
-      calidad del código** y **redujeron los errores en producción**.
-    textEn: >-
-      Defined core service architecture and backend review and deployment
-      standards for the team, implementing **test coverage** and **static
-      code analyzers** that increased **code reliability and quality** and
-      **reduced production errors**.
-  - type: action
-    text: >-
-      **Mentoría y onboarding** de las nuevas incorporaciones al equipo,
-      acompañándolas y guiándolas hasta alcanzar plena autonomía.
-    textEn: >-
-      **Mentored and onboarded** new team members, guiding and supporting them
-      until they reached full autonomy.
-  - type: action
-    text: >-
-      Gestión de **bugs y prioridades**, definición de **especificaciones de
-      producto**, **actualización y revisión continua en materia de
-      seguridad**, y **análisis de performance** de cachés y bases de datos.
-    textEn: >-
-      Managed **bugs and priorities**, defined **product specifications**,
-      drove **continuous security updates and reviews**, and analyzed the
-      **performance of caches and databases**.
+      Defined with the team architecture, review and deployment standards; **test
+      coverage** and **static analyzers**; **mentored and onboarded** new hires
+      through to full autonomy.
   - type: achievement
     text: >-
-      Diseñé y lideré la **migración de las suscripciones
-      activas** a la nueva plataforma, analizando cada casuística: **100% de
-      las suscripciones compatibles migradas sin pérdidas**, de forma
-      escalonada y dinámica, **sin interrumpir la plataforma** y con ambos
-      sistemas de suscripción funcionando **en paralelo** durante la
-      migración.
+      Diseñé y lideré la migración de **+600K suscripciones** desde gateways
+      legacy al nuevo payments gateway: **cero downtime** y **cero pérdidas**,
+      con ambos sistemas en paralelo durante la migración.
     textEn: >-
-      Designed and led the **migration of active
-      subscriptions** to the new platform, analyzing every edge case: **100%
-      of compatible subscriptions migrated with zero loss**, rolled out
-      gradually and dynamically, **without disrupting the platform**, with
-      both subscription systems running **in parallel** throughout the
-      migration.
+      Designed and led the migration of **600K+ subscriptions** from legacy
+      payment gateways to the new payments gateway: **zero downtime** and **zero
+      losses**, with both systems running in parallel throughout the migration.
   - type: achievement
     text: >-
-      Optimicé el **área de perfil de usuario**: **latencias por debajo de
-      100 ms** en los endpoints sin dependencias de terceros, **escalado de su
-      base de datos** e **integraciones con otros servicios de la compañía**
-      para mejorar la experiencia de usuario y la gestión del producto,
-      convirtiendo además el proyecto en **multi-tenant** para servir a la vez
-      a **Freepik, Flaticon, Slidesgo y Videvo**.
+      Optimicé con el equipo el **área de perfil**: latencias **sub-100 ms** en
+      endpoints sin dependencias de terceros, escalado de BD e integraciones con
+      otros servicios; proyecto **multi-tenant** (Freepik, Flaticon, Slidesgo,
+      Videvo).
     textEn: >-
-      Optimized the **user profile area**: **sub-100 ms latencies** on
-      endpoints without third-party dependencies, **database scaling**, and
-      **integrations with other company services** to improve user experience
-      and product management, also making the project **multi-tenant** to
-      serve **Freepik, Flaticon, Slidesgo and Videvo** at once.
+      Optimized with the team the **user profile area**: **sub-100 ms** latencies
+      on endpoints without third-party deps, DB scaling and integrations with
+      other company services; **multi-tenant** project (Freepik, Flaticon,
+      Slidesgo, Videvo).
 ---

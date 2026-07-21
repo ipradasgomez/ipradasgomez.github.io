@@ -14,15 +14,15 @@
   "hero": {
     "title": {
       "es": "Software. Liderazgo. IA",
-      "en": "Software. Leadership. AI driven"
+      "en": "Software. Leadership. AI"
     },
     "headline": {
       "es": "Convierto complejidad técnica en plataformas y equipos que escalan.",
       "en": "I turn technical complexity into platforms and teams that scale."
     },
     "intro": {
-      "es": "Lead Backend Engineer con 8+ años construyendo sistemas de alto tráfico (~100M visitas/mes). Diseño arquitectura, lidero equipo sin soltar el código y aplico IA con criterio de ingeniería para avanzar más rápido sin perder calidad.",
-      "en": "Lead Backend Engineer with 8+ years building high-traffic systems (~100M visits/month). I design architecture, lead the team without leaving the code behind, and apply AI with engineering judgement to move faster without losing quality."
+      "es": "Lead Backend Engineer con 8+ años diseñando plataformas backend escalables para millones de usuarios. Especializado en arquitecturas distribuidas, sistemas cloud-native, productos con IA y liderazgo técnico en equipos multidisciplinares.",
+      "en": "Lead Backend Engineer with 8+ years designing scalable backend platforms serving millions of users. Specialized in distributed architectures, cloud-native systems, AI-powered products and technical leadership across cross-functional teams."
     }
   },
   "heroSummary": {
@@ -40,11 +40,11 @@
     "paragraphs": {
       "es": [
         "Soy Isma, Lead Backend Engineer afincado en Málaga. Llevo 8+ años en backend, creciendo hasta un rol hands-on de liderazgo: diseño de arquitectura, liderazgo de equipo y trabajo cercano con Producto y Diseño — sin dejar el código de lado. He trabajado en sistemas de alto tráfico (~100M visitas/mes) y en el día a día aplico DDD, SOLID, arquitectura hexagonal / por capas, eventos de dominio y APIs pensadas para durar.",
-        "Con la IA he podido llegar a áreas que antes quedaban más lejos — DevOps, producto, análisis de datos, testing — y recorrer más rápido el ciclo de una feature. Ahora exploro la automatización de flujos con agentes, MCP e integraciones de modelos: los uso como acelerador — vibe coding con respaldo de ingeniería: criterio hands-on, conocer el stack y sus internals, para que el crecimiento sea sólido."
+        "Con la IA he podido llegar a áreas que antes quedaban más lejos — DevOps, producto, análisis de datos, testing — y recorrer más rápido el ciclo de una feature. Ahora exploro la automatización de flujos con agentes, MCP e integraciones de modelos: las uso como acelerador — AI-assisted development con respaldo de ingeniería: criterio hands-on, conocer el stack y sus internals, para que el crecimiento sea sólido."
       ],
       "en": [
         "I'm Isma, a Lead Backend Engineer based in Málaga, Spain. I've spent 8+ years in backend, growing into a hands-on lead role: architecture design, team leadership, and close work with Product and Design — without leaving the code behind. I've worked on high-traffic systems (~100M visits/month) and day to day I apply DDD, SOLID, hexagonal / layered architecture, domain events, and APIs built to last.",
-        "With AI, I've been able to reach into areas that used to feel farther away — DevOps, product, data analysis, testing — and move faster through a feature cycle. I'm now exploring workflow automation with agents, MCP, and model integrations: I use them as an accelerator — engineering-backed vibe coding: hands-on judgment, knowing the stack and the internals, so growth stays solid."
+        "With AI, I've been able to reach into areas that used to feel farther away — DevOps, product, data analysis, testing — and move faster through a feature cycle. I'm now exploring workflow automation with agents, MCP, and model integrations: I use them as an accelerator — AI-assisted development grounded in engineering judgement: hands-on judgment, knowing the stack and the internals, so growth stays solid."
       ]
     },
     "highlights": [
@@ -73,23 +73,27 @@
   },
   "stack": [
     {
-      "group": { "es": "Lenguajes, frameworks & almacenamiento", "en": "Languages, frameworks & storage" },
-      "items": ["PHP", "Slim", "Laravel", "Python", "Django", "TypeScript", "JavaScript", "Vue", "React", "Next.js", "Tailwind CSS", "Vite", "MySQL", "MariaDB", "PostgreSQL", "Elasticsearch", "Redis", "Memcached"]
+      "group": { "es": "Lenguajes & frameworks", "en": "Languages & frameworks" },
+      "items": ["PHP", "Laravel", "Slim", "React", "Vue", "MySQL", "Redis", "Elasticsearch"]
     },
     {
-      "group": { "es": "IDEs, herramientas & despliegue", "en": "IDEs, tooling & delivery" },
-      "items": ["PhpStorm", "VS Code", "PHPUnit", "Pest", "Infection", "Git", "Bitbucket", "Docker", "Kubernetes", "GCP", "Pub/Sub", "Nginx", "GitHub Actions", "Tekton", "Bash", "Linux"]
+      "group": { "es": "Cloud, infra & entrega", "en": "Cloud, infra & delivery" },
+      "items": ["Docker", "Kubernetes", "GCP", "gRPC", "Pub/Sub", "Redis Streams", "GitHub Actions", "CI/CD"]
+    },
+    {
+      "group": { "es": "Arquitectura & prácticas", "en": "Architecture & practices" },
+      "items": ["DDD", "Hexagonal", "Event-Driven", "SOLID", "YAGNI", "DRY", "PSR"]
     }
   ],
   "ai": {
     "title": { "es": "IA en el día a día", "en": "AI day to day" },
-    "items": ["Claude", "ChatGPT", "Cursor", "Vertex AI", "Agents", "MCP", "OpenRouter", { "es": "Automatizaciones", "en": "Automation" }]
+    "items": ["Claude", "Cursor", "ChatGPT", "Agents", "MCP", { "es": "Skills & automatización", "en": "Skills & automation" }]
   },
   "languages": {
     "title": { "es": "Idiomas", "en": "Languages" },
     "items": [
       { "es": "Español — nativo", "en": "Spanish — native" },
-      { "es": "Inglés — profesional", "en": "English — professional working" }
+      { "es": "Inglés — B2 profesional", "en": "English — B2 professional" }
     ]
   },
   "contact": {
